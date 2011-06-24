@@ -1,0 +1,27 @@
+    <layout>
+      <configItem>
+        <name>cyborg16</name>
+        <shortDescription>Cyborg16</shortDescription>
+        <description>Diggory's layouts</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>United Kingdom - Colemak and progsyms</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak</name>
+            <description>United Kingdom - Dvorak and progsyms</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_shift</name>
+            <description>United Kingdom - Colemak and progsyms shifted</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>

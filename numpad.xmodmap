@@ -1,0 +1,23 @@
+keycode 0x4D =  BackSpace    Delete
+keycode 0x70 =  0    x
+keycode 0x3F =  period    comma
+keycode 0x52 =  asterisk    slash
+
+keycode 0x4F =  1    A
+keycode 0x50 =  2    B
+keycode 0x51 =  3    C
+keycode 0x56 =  plus    minus
+
+keycode 0x53 =  4    D
+keycode 0x54 =  5    E
+keycode 0x55 =  6    F
+
+keycode 0x57 =  7    parenleft
+keycode 0x58 =  8    parenright
+keycode 0x59 =  9    percent
+keycode 0x6C =  Return    space
+
+keycode 0x5A =  Mode_switch
+keycode 0x5B =  equal    ampersand
+
+!xset r 77 enables repeat on backspace

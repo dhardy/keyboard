@@ -1,0 +1,126 @@
+!keycode 0x09 =  Escape
+
+!keycode 0x43 =  F1
+!keycode 0x44 =  F2
+!keycode 0x45 =  F3
+!keycode 0x46 =  F4
+!keycode 0x47 =  F5
+!keycode 0x48 =  F6
+!keycode 0x49 =  F7
+!keycode 0x4A =  F8
+!keycode 0x4B =  F9
+!keycode 0x4C =  F10
+!keycode 0x5F =  F11
+!keycode 0x60 =  F12
+
+!keycode 0x6F =  
+!keycode 0x4E =  
+!keycode 0x6E =  
+
+
+!keycode 0x31 =  
+keycode 0x0A =  comma    parenleft    9
+keycode 0x0B =  f    F    7
+keycode 0x0C =  h    H    5
+keycode 0x0D =  d    D    3
+keycode 0x0E =  k    K    percent
+keycode 0x0F =  j    J    dollar
+keycode 0x10 =  c    C    2
+keycode 0x11 =  u    U    4
+keycode 0x12 =  l    L    6
+keycode 0x13 =  period    parenright    8
+keycode 0x14 =  minus    underscore
+keycode 0x15 =  equal    plus
+!keycode 0x16 =  BackSpace
+
+!keycode 0x6A =  
+!keycode 0x61 =  
+!keycode 0x63 =  
+
+!keycode 0x4D =  
+!keycode 0x70 =  
+!keycode 0x3F =  
+!keycode 0x52 =  
+
+
+!keycode 0x17 =  Tab    ISO_Left_Tab
+keycode 0x18 =  o    O    slash
+keycode 0x19 =  a    A    equal
+keycode 0x1A =  n    N    asterisk
+keycode 0x1B =  t    T    1
+keycode 0x1C =  g    G    backslash
+keycode 0x1D =  m    M    underscore
+keycode 0x1E =  s    S    0
+keycode 0x1F =  e    E    colon
+keycode 0x20 =  r    R    semicolon
+keycode 0x21 =  i    I    numbersign
+keycode 0x22 =  slash    question
+keycode 0x23 =  NoSymbol
+!keycode 0x24 =  Return
+
+!keycode 0x6B =  
+!keycode 0x67 =  
+!keycode 0x69 =  
+
+!keycode 0x4F =  
+!keycode 0x50 =  
+!keycode 0x51 =  
+!keycode 0x56 =  
+
+
+!keycode 0x42 =  
+keycode 0x26 =  q    Q    less
+keycode 0x27 =  x    X    greater
+keycode 0x28 =  b    B    carat
+keycode 0x29 =  p    P    plus
+keycode 0x2A =  z    Z    bar
+keycode 0x2B =  y    Y    at
+keycode 0x2C =  w    W    bracketleft
+keycode 0x2D =  apostrophe    quotedbl    bracketright
+keycode 0x2E =  v    V    braceleft
+keycode 0x2F =  semicolon    colon    braceright
+keycode 0x30 =  exclam    ampersand
+keycode 0x33 =  NoSymbol
+!aring    Aring    bar
+
+!keycode 0x53 =  
+!keycode 0x54 =  
+!keycode 0x55 =  
+
+
+!keycode 0x32 =  
+keycode 0x5E =  NoSymbol
+keycode 0x34 =  NoSymbol
+keycode 0x35 =  NoSymbol
+keycode 0x36 =  Shift_L
+keycode 0x37 =  BackSpace
+keycode 0x38 =  NoSymbol
+keycode 0x39 =  space
+keycode 0x3A =  Return
+keycode 0x3B =  NoSymbol
+keycode 0x3C =  NoSymbol
+keycode 0x3D =  NoSymbol
+!keycode 0x3E =  
+
+!keycode 0x62 =  
+!keycode 0x57 =  
+!keycode 0x58 =  
+!keycode 0x59 =  
+!keycode 0x6C =  
+
+
+!keycode 0x25 =  
+!keycode 0x73 =  
+!keycode 0x40 =  
+keycode 0x41 =  Mode_switch
+!keycode 0x71 =  
+!keycode 0x74 =  
+!keycode 0x75 =  
+!keycode 0x6D =  
+
+!keycode 0x64 =  
+!keycode 0x68 =  
+!keycode 0x66 =  
+
+!keycode 0x5A =  
+!keycode 0x5B =  

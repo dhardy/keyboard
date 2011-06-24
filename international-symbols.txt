@@ -1,0 +1,54 @@
+Dead keys are represented with some key, often o
+
+US intl
+ò1234567890-= õ!@#$%⁶&*()_+ `¡²³¤€¼½¾‘’¥× ~¹őçō£ ^ơǫŏ ọ÷
+ qwertyuiop[]  QWERTYUIOP{}  äåé®þüúíóö«»  ÄÅÉ®ÞÜÚÍÓÖ“”
+ asdfghjkl;ó\  ASDFGHJKL:ö|  áßðfghjœø¶'¬  Á§ÐFGHJŒØ°"¦
+<zxcvbnm,./   >ZXCVBNM<>?   |æx©vbñµçȯ¿   ¦ÆX¢VBÑµÇǒỏ
+
+US alt-intl
+ò1234567890-= õ!@#$%⁶&*()_+ `1234€^78‘’ōő ~!@#$ ^&*ŏ ọơ
+ qwertyuiop[]  QWERTYUIOP{}  qw€rtyuiop[]  QW¢RTYUIOP{}
+ asdfghjkl;ó\  ASDFGHJKL:ö|  asdfghjklǫ'\  ASDFGHJKLö'\
+<zxcvbnm,./   >ZXCVBNM<>?   |zxcvbnmçȯỏ   ¦ZXCVBNMǒôỏ
+
+GB intl
+ò1234567890-= ¬!ö£$%ô&*()_+ |¹²³€½¾{[]}\ç |¡½⅓¼⅜⅙⅞™±°¿ǫ
+ qwertyuiop[]  QWERTYUIOP{}  @ŁE¶Ŧ←↓→ØÞöõ  Ωłe®ŧ¥↑ıøþåā
+ asdfghjkl;ó#  ASDFGHJKL:@õ  æßðđŋħjĸłó'|  Æ§ÐªŊĦJ&Łő||
+\zxcvbnm,./   |ZXCVBNM<>?   |«»¢“”nµ─·ọ   |<>©‘’Nº×÷ȯ
+
+Dead keys
+1dead_acute	áéíóúć	´			AC11(1) ['@], AC11(1) ['"]
+1dead_grave	àèìòù	`			BKSL(3) [#~], TLDE(1) [`¬]
+2dead_diaeresis	äëïöü	¨			AE02(2) [2"], AC11(2) ['"], AC10(4) [;:]
+1dead_circumflex	âêîôûĉ	¹²³⁴⁵⁶⁷⁸⁹⁰⁼⁺		AC11(3) ['@], AE06(2) [6^], AB09(4) [.>]
+1dead_cedilla	 ȩ   ç	¸			AB08(3) [,<]
+2dead_tilde	ãẽĩõũ				BKSL(2) [#~], TLDE(2) [`¬]
+dead_doubleacute   őű				AE02(4) [2"], AE12(3) [=+]
+1dead_macron	āēīōū				AE03(4) [3#], AE11(3) [-_]
+dead_horn	   ơư				AE07(4) [7&]
+dead_ogonek	ąęįǫų				AE08(4) [8*], AC10(3) [;:]
+1dead_breve	ăĕĭŏŭ				BKSL(4) [#~], AE09(4) [9(]
+1dead_abovering	å   ů				AE10(4) [0)]
+dead_belowdot	ạẹịọụ				AE11(4) [-_]
+dead_abovedot	ȧėıȯ ċ				AB09(3) [.>]
+1dead_caron	ǎěǐǒǔč				AC11(4) ['@], AB09(4) [.>], AB08(4) [,<]
+dead_hook	ảẻỉỏủ				AB10(4) [/?], AE12(4) [=+], AB10(3) [/?]
+
+Other keys
+½¾½⅓¼⅜⅙⅞
+¡¿«»‘’“”¶
+ßµΩ
+æœÆŒ
+±×÷─·°
+©®™
+¢€
+←↓→↑
+Þþ§
+łŁøØ
+ð
+đħÐŦ
+ŧ¥Ħ
+ıŋŊĸ
+ªº¤
