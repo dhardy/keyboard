@@ -662,7 +662,7 @@
   colemak         cyborg16: Colemak (US)
   colemak_ch      cyborg16: Colemak (US keyboard with swiss umlauts)
   colemak_ukch    cyborg16: Colemak (UK keyboard with swiss umlauts)
-  dvorak          cyborg16: Dvorak (UK)
+  dvorak_uk       cyborg16: Dvorak (UK)
   basic           cyborg16: Basic (US)
   basic_uk        cyborg16: Basic (UK)
   colemak_shift   cyborg16: Colemak with right hand shifted right one key

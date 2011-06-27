@@ -4729,7 +4729,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
+            <name>dvorak_uk</name>
             <description>Dvorak (UK)</description>
           </configItem>
         </variant>

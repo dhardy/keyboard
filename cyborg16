@@ -1,57 +1,56 @@
 // $XKeyboardConfig: xkeyboard-config/symbols/progsyms 2008-10-15 svu Exp $
 
 // Difficulty to reach (under index finger: 1 - 8)
-// 1 2 3 4 5 6 7 8 9 0 - =
-// 4 2 2 2 5 8 4 2 2 4 3 5 6
-// 2 2 2 1 3 5 1 2 2 2 4
-// 3 3 3 3 7 4 4 4 4 3
+//  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//  ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
+//  ┃ Tab ┊ 4 ┊ 2 ┊ 2 ┊ 2 ┊ 5 ┊ 8 ┊ 4 ┊ 2 ┊ 2 ┊ 4 ┊ 3 ┊ 5 ┊  6  ┃
+//  ┃ BkSp ┊ 2 ┊ 2 ┊ 2 ┊ 1 ┊ 3 ┊ 5 ┊ 1 ┊ 2 ┊ 2 ┊ 2 ┊ 4 ┊  Enter ┃
+//  ┃ Shift  ┊ 3 ┊ 3 ┊ 3 ┊ 3 ┊ 7 ┊ 4 ┊ 4 ┊ 4 ┊ 4 ┊ 3 ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 // International plus programming keys (higher emphasis on progamming) The
 // brackets and common operators, and more useful dead keys, are on the third
 // level. Keys based on thinkpad keyboard (with colemak+ch layout);
 // "first", third and forth levels:
 
-//  —————————————————————————————————————————————————————————————
-//  | ` | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | BckSp |
-//  | Tab | q | w | f | p | g | j | l | u | y | ä | ö | ü |  \  |
-//  | BkSp | A | R | S | T | d | h | N | E | I | O | ' |  Enter |
-//  | Shift  | z | x | c | v | b | k | m | , | . | / |  Shift   |
-//  |Fn |Ctrl|Wn|Alt| Space              |Alt|Mnu|Ctl|  Arrows  |
-//  —————————————————————————————————————————————————____________
-//  —————————————————————————————————————————————————————————————
-//  | ` | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | BckSp |
-//  | Tab | q | w | f | p | g | j | l | u | y | Ä | Ö | Ü |  \  |
-//  | BkSp | A | R | S | T | d | h | N | E | I | O | " |  Enter |
-//  | Shift  | z | x | c | v | b | k | m | ; | : | ? |  Shift   |
-//  |Fn |Ctrl|Wn|Alt| Space              |Alt|Mnu|Ctl|  Arrows  |
-//  —————————————————————————————————————————————————____________
-//  —————————————————————————————————————————————————————————————
-//  |  ù|  ¡|  ü| £ | € | ¤ |  û|  ū|  ·|  ŭ| 0 | − | ≡ | BckSp |
-//  | Tab | < | { | * | & | ^ | % | | | / | } | > | é | è |     |
-//  | BkSp | [ | ( | + | = | 0 | 1 | : | - | ) | ] | à |  Enter |
-//  | Shift  | ' | " | ` | # | ~ | ! | — | ; | : | \ |  Shift   |
-//  |Fn |Ctrl|Wn|Alt| Space              |Alt|Mnu|Ctl|  Arrows  |
-//  —————————————————————————————————————————————————____________
-//  —————————————————————————————————————————————————————————————
-//  | ‘ | ’ | “ | ” | ¢ |   |   | ÷ | × |   |   | — | ± | BckSp |
-//  | Tab | Æ |   | × | · |   |   |   | ÷ |   | Å | É | È |     |
-//  | BkSp | æ | ® | ß | ≡ |   |   |   | − |   | å | À |  Enter |
-//  | Shift  |   |   | ç |   |   |   | µ | « | » | ¿ |  Shift   |
-//  |Fn |Ctrl|Wn|Alt| Space              |Alt|Mnu|Ctl|  Arrows  |
-//  —————————————————————————————————————————————————____________
+//  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//  ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
+//  ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ ' ┊ ö ┊ ü ┊  \  ┃
+//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ä ┊  Enter ┃
+//  ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ , ┊ . ┊ / ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//  ┃ ~ ┊ ! ┊ @ ┊ # ┊ $ ┊ % ┊ ^ ┊ & ┊ * ┊ ( ┊ ) ┊ _ ┊ + ┊ BckSp ┃
+//  ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ " ┊ Ö ┊ Ü ┊  |  ┃
+//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ Ä ┊  Enter ┃
+//  ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ ; ┊ : ┊ ? ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//  ┃`èù┊´éú┊¨ëü┊ £ ┊ € ┊ ¤ ┊^¹û┊¯ēū┊ · ┊˘ĕŭ┊   ┊ − ┊ ≡ ┊ BckSp ┃
+//  ┃ Tab ┊ < ┊ { ┊ ÷ ┊ | ┊ % ┊ ^ ┊ & ┊ * ┊ } ┊ > ┊ é ┊ è ┊  #  ┃
+//  ┃ BkSp ┊ [ ┊ ( ┊ - ┊ : ┊ 0 ┊ 1 ┊ = ┊ + ┊ ) ┊ ] ┊ à ┊  Enter ┃
+//  ┃ Shift  ┊ ' ┊ " ┊ ` ┊ ! ┊ $ ┊ # ┊ — ┊ ; ┊ : ┊ \ ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+//  ┃ ‘ ┊ ’ ┊ “ ┊ ” ┊ ¢ ┊   ┊   ┊ ÷ ┊ × ┊   ┊   ┊ — ┊ ± ┊ BckSp ┃
+//  ┃ Tab ┊ ≤ ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
+//  ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊   ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
+//  ┃ Shift  ┊   ┊   ┊ ç ┊   ┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-//  Numerical codes:
-// 0x1002013	–	n-dash
-// 0x1002014	—	m-dash
-// 0x1002212	−	minus sign
-// 0x1002261	≡	“is identical to” sign
+
 
 partial alphanumeric_keys
 xkb_symbols "prog_intl" {
     name[Group1]="3rd-level symbols for programmers";
     
     key <TLDE> { [     NoSymbol,     NoSymbol,      dead_grave,       leftsinglequotemark	] };
-    key <AE01> { [     NoSymbol,     NoSymbol,      exclamdown,       rightsinglequotemark	] };
+    key <AE01> { [     NoSymbol,     NoSymbol,      dead_acute,       rightsinglequotemark	] };
     key <AE02> { [     NoSymbol,     NoSymbol,  dead_diaeresis,       leftdoublequotemark	] };
     key <AE03> { [     NoSymbol,     NoSymbol,        sterling,       rightdoublequotemark	] };
     key <AE04> { [     NoSymbol,     NoSymbol,        EuroSign,       cent	] };
@@ -64,38 +63,38 @@ xkb_symbols "prog_intl" {
     key <AE11> { [     NoSymbol,     NoSymbol,       0x1002212,       0x1002014	] };
     key <AE12> { [     NoSymbol,     NoSymbol,       0x1002261,       plusminus	] };
     
-    key <AD01> { [     NoSymbol,     NoSymbol,            less,       NoSymbol	] };
+    key <AD01> { [     NoSymbol,     NoSymbol,            less,       0x1002264	] };
     key <AD02> { [     NoSymbol,     NoSymbol,       braceleft,       NoSymbol	] };
-    key <AD03> { [     NoSymbol,     NoSymbol,        asterisk,       multiply	] };
-    key <AD04> { [     NoSymbol,     NoSymbol,       ampersand,       periodcentered	] };
-    key <AD05> { [     NoSymbol,     NoSymbol,     asciicircum,       NoSymbol	] };
-    key <AD06> { [     NoSymbol,     NoSymbol,         percent,       NoSymbol	] };
-    key <AD07> { [     NoSymbol,     NoSymbol,             bar,       NoSymbol	] };
-    key <AD08> { [     NoSymbol,     NoSymbol,           slash,       division	] };
+    key <AD03> { [     NoSymbol,     NoSymbol,        division,       division	] };
+    key <AD04> { [     NoSymbol,     NoSymbol,             bar,       0x100221A	] };
+    key <AD05> { [     NoSymbol,     NoSymbol,         percent,       NoSymbol	] };
+    key <AD06> { [     NoSymbol,     NoSymbol,     asciicircum,       dead_circumflex	] };
+    key <AD07> { [     NoSymbol,     NoSymbol,       ampersand,       NoSymbol	] };
+    key <AD08> { [     NoSymbol,     NoSymbol,        asterisk,       multiply	] };
     key <AD09> { [     NoSymbol,     NoSymbol,      braceright,       NoSymbol	] };
-    key <AD10> { [     NoSymbol,     NoSymbol,         greater,       NoSymbol	] };
-    //key <AD11> { [     NoSymbol,     NoSymbol,        NoSymbol,       leftarrow	] };
-    //key <AD12> { [     NoSymbol,     NoSymbol,        NoSymbol,       rightarrow	] };
+    key <AD10> { [     NoSymbol,     NoSymbol,         greater,       0x1002265	] };
+    key <AD11> { [     NoSymbol,     NoSymbol,        NoSymbol,       leftarrow	] };
+    key <AD12> { [     NoSymbol,     NoSymbol,        NoSymbol,       rightarrow	] };
+    key <BKSL> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol        ] };
     
-    key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       ae	] };
-    key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       registered	] };
-    key <AC03> { [     NoSymbol,     NoSymbol,            plus,       NoSymbol	] };
-    key <AC04> { [     NoSymbol,     NoSymbol,           equal,       0x1002261	] };
+    key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       0x1002209	] };
+    key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       0x1002208	] };
+    key <AC03> { [     NoSymbol,     NoSymbol,           minus,       0x1002212	] };
+    key <AC04> { [     NoSymbol,     NoSymbol,           colon,       NoSymbol	] };
     key <AC05> { [     NoSymbol,     NoSymbol,               0,       NoSymbol	] };
     key <AC06> { [     NoSymbol,     NoSymbol,               1,       NoSymbol	] };
-    key <AC07> { [     NoSymbol,     NoSymbol,           colon,       NoSymbol	] };
-    key <AC08> { [     NoSymbol,     NoSymbol,           minus,       0x1002212	] };
-    key <AC09> { [     NoSymbol,     NoSymbol,      parenright,       NoSymbol	] };
-    key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       NoSymbol	] };
-    //key <AC11> { [     NoSymbol,     NoSymbol,      dead_acute,       dead_diaeresis	] };
-    key <BKSL> { [     NoSymbol,     NoSymbol,      dead_tilde,       dead_doubleacute	] };
+    key <AC07> { [     NoSymbol,     NoSymbol,           equal,       0x1002261	] };
+    key <AC08> { [     NoSymbol,     NoSymbol,            plus,       NoSymbol	] };
+    key <AC09> { [     NoSymbol,     NoSymbol,      parenright,       0x100220B	] };
+    key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       0x100220C	] };
+    key <AC11> { [     NoSymbol,     NoSymbol,        NoSymbol,       dead_diaeresis	] };
     
     key <AB01> { [     NoSymbol,     NoSymbol,      apostrophe,       NoSymbol	] };
     key <AB02> { [     NoSymbol,     NoSymbol,        quotedbl,       NoSymbol	] };
     key <AB03> { [     NoSymbol,     NoSymbol,           grave,       NoSymbol	] };
-    key <AB04> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol	] };
-    key <AB05> { [     NoSymbol,     NoSymbol,      asciitilde,       NoSymbol	] };
-    key <AB06> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol	] };
+    key <AB04> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol	] };
+    key <AB05> { [     NoSymbol,     NoSymbol,          dollar,       NoSymbol	] };
+    key <AB06> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol	] };
     key <AB07> { [     NoSymbol,     NoSymbol,       0x1002014,       mu	] };
     key <AB08> { [     NoSymbol,    semicolon,       semicolon,       guillemotleft	] };
     key <AB09> { [     NoSymbol,        colon,           colon,       guillemotright	] };
@@ -121,45 +120,36 @@ xkb_symbols "colemak_ch" {
     include "cyborg16(colemak)"
     name[Group1]="US keyboard, colemak, Swiss-inspired accented keys, and progsyms";
     
-    key <AD01> { [   NoSymbol,      NoSymbol,   NoSymbol,         AE  ] };
-    key <AD10> { [ adiaeresis,    Adiaeresis,   NoSymbol,      Aring  ] };
+    key <AD10> { [ apostrophe,      quotedbl,   NoSymbol,   NoSymbol  ] };
     key <AD11> { [ odiaeresis,    Odiaeresis,     eacute,     Eacute  ] };
     key <AD12> { [ udiaeresis,    Udiaeresis,     egrave,     Egrave  ] };
     
     key <AC03> { [   NoSymbol,      NoSymbol,   NoSymbol,     ssharp  ] };
-    key <AC10> { [   NoSymbol,      NoSymbol,   NoSymbol,      aring  ] };
-    key <AC11> { [   NoSymbol,      NoSymbol,     agrave,     Agrave  ] };
+    key <AC11> { [ adiaeresis,    Adiaeresis,     agrave,     Agrave  ] };
     
     key <AB03> { [   NoSymbol,      NoSymbol,   NoSymbol,   ccedilla  ] };
 };
 
 partial alphanumeric_keys
 xkb_symbols "colemak_ukch" {
-    include "us(colemak)"
-    include "cyborg16(prog_intl)"
+    include "cyborg16(colemak_ch)"
     name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
     
     key <AE02>  { [         2,         at ] };
     key <AE03>  { [         3,   sterling ] };
     key <AE04>  { [         4,     dollar, EuroSign ] };
     
-    key <AD11> { [ udiaeresis,    Udiaeresis,     egrave,     Egrave  ] };
-    key <AD12> { [ odiaeresis,    Odiaeresis,     eacute,     Eacute  ] };
-    
-    key <AC11> { [ adiaeresis,    Adiaeresis,     agrave,     Agrave  ] };
     //key <AC11>  { [apostrophe,   quotedbl ] };
     key <TLDE>  { [     grave,    notsign ] };
     
     key <BKSL>  { [numbersign, asciitilde ] };
     key <LSGT>  { [ backslash,        bar,          bar,    brokenbar ] };
     
-    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
-    
     include "level3(ralt_switch_multikey)"
 };
 
 partial alphanumeric_keys
-xkb_symbols "dvorak" {
+xkb_symbols "dvorak_uk" {
     include "us(dvorak)"
     include "cyborg16(prog_intl)"
     

@@ -1,26 +1,54 @@
-    <layout>
+    </layout>
+      <layout>
       <configItem>
         <name>cyborg16</name>
         <shortDescription>Cyborg16</shortDescription>
-        <description>Diggory's layouts</description>
+        <description>DHardy's layouts</description>
+        <languageList><iso639Id>eng</iso639Id>
+                     <iso639Id>ger</iso639Id>
+                      <iso639Id>fra</iso639Id></languageList>
       </configItem>
       <variantList>
         <variant>
           <configItem>
             <name>colemak</name>
-            <description>United Kingdom - Colemak and progsyms</description>
+            <description>Colemak (US)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>dvorak</name>
-            <description>United Kingdom - Dvorak and progsyms</description>
+            <name>colemak_ch</name>
+            <description>Colemak (US keyboard with swiss umlauts)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_ukch</name>
+            <description>Colemak (UK keyboard with swiss umlauts)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak_uk</name>
+            <description>Dvorak (UK)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>basic</name>
+            <description>Basic (US)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>basic_uk</name>
+            <description>Basic (UK)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>colemak_shift</name>
-            <description>United Kingdom - Colemak and progsyms shifted</description>
+            <description>Colemak with right hand shifted right one key</description>
           </configItem>
         </variant>
       </variantList>
