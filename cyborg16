@@ -30,7 +30,7 @@
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃`èù┊´éú┊¨ëü┊ £ ┊ € ┊ ¤ ┊^¹û┊¯ēū┊ · ┊˘ĕŭ┊   ┊ − ┊ ≡ ┊ BckSp ┃
-//  ┃ Tab ┊ < ┊ { ┊ ÷ ┊ | ┊ % ┊ ^ ┊ & ┊ * ┊ } ┊ > ┊ é ┊ è ┊  #  ┃
+//  ┃ Tab ┊ < ┊ { ┊ / ┊ | ┊ % ┊ ^ ┊ & ┊ * ┊ } ┊ > ┊ é ┊ è ┊  #  ┃
 //  ┃ BkSp ┊ [ ┊ ( ┊ - ┊ : ┊ 0 ┊ 1 ┊ = ┊ + ┊ ) ┊ ] ┊ à ┊  Enter ┃
 //  ┃ Shift  ┊ ' ┊ " ┊ ` ┊ ! ┊ $ ┊ # ┊ — ┊ ; ┊ : ┊ \ ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
@@ -38,7 +38,7 @@
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ‘ ┊ ’ ┊ “ ┊ ” ┊ ¢ ┊   ┊   ┊ ÷ ┊ × ┊   ┊   ┊ — ┊ ± ┊ BckSp ┃
 //  ┃ Tab ┊ ≤ ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
-//  ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊   ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
+//  ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊ + ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
 //  ┃ Shift  ┊   ┊   ┊ ç ┊   ┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -65,7 +65,7 @@ xkb_symbols "prog_intl" {
     
     key <AD01> { [     NoSymbol,     NoSymbol,            less,       0x1002264	] };
     key <AD02> { [     NoSymbol,     NoSymbol,       braceleft,       NoSymbol	] };
-    key <AD03> { [     NoSymbol,     NoSymbol,        division,       division	] };
+    key <AD03> { [     NoSymbol,     NoSymbol,           slash,       division	] };
     key <AD04> { [     NoSymbol,     NoSymbol,             bar,       0x100221A	] };
     key <AD05> { [     NoSymbol,     NoSymbol,         percent,       NoSymbol	] };
     key <AD06> { [     NoSymbol,     NoSymbol,     asciicircum,       dead_circumflex	] };
@@ -84,7 +84,7 @@ xkb_symbols "prog_intl" {
     key <AC05> { [     NoSymbol,     NoSymbol,               0,       NoSymbol	] };
     key <AC06> { [     NoSymbol,     NoSymbol,               1,       NoSymbol	] };
     key <AC07> { [     NoSymbol,     NoSymbol,           equal,       0x1002261	] };
-    key <AC08> { [     NoSymbol,     NoSymbol,            plus,       NoSymbol	] };
+    key <AC08> { [     NoSymbol,     NoSymbol,            plus,       plus	] };
     key <AC09> { [     NoSymbol,     NoSymbol,      parenright,       0x100220B	] };
     key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       0x100220C	] };
     key <AC11> { [     NoSymbol,     NoSymbol,        NoSymbol,       dead_diaeresis	] };
@@ -99,6 +99,18 @@ xkb_symbols "prog_intl" {
     key <AB08> { [     NoSymbol,    semicolon,       semicolon,       guillemotleft	] };
     key <AB09> { [     NoSymbol,        colon,           colon,       guillemotright	] };
     key <AB10> { [     NoSymbol,     NoSymbol,       backslash,       questiondown	] };
+};
+
+// above with proper operators (division, multiplication and subtraction) for middle fingers, third level
+partial alphanumeric_keys
+xkb_symbols "prog_ops" {
+    name[Group1]="3rd-level symbols for programmers (real operators)";
+    include "cyborg16(prog_intl)"
+    
+    key <AD03> { [     NoSymbol,     NoSymbol,        division,       slash	] };
+    key <AD08> { [     NoSymbol,     NoSymbol,        multiply,       asterisk	] };
+    
+    key <AC03> { [     NoSymbol,     NoSymbol,       0x1002212,       minus	] };
 };
 
 
