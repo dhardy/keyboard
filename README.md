@@ -30,16 +30,24 @@ programming. I write quite a bit of code:
     x ∉ vec
     (x ÷ 3) ∈ vec
 
-that type of thing. Colemak may have made English text a lot nicer to type, but
-code symbols could still be massively easier to type. Of course, the best keys
-on the keyboard are already taken — we use them for typing letters, not
-numbers, operators and other symbols. I took my inspiration from the
-[neo](http://www.neo-layout.org/) layout: use an extra shift key. It turns out
-that XKB (the linux keyboard layout system) has good support for 4 levels of
-input per key (unshifted, with shift, with alt, with alt+shift). It even
-supports 8 levels per key (I think this is mainly used in Cyrillic languages).
-So all I had to do was activate a second shift key, and add some symbols to the
-other keys. Oh, and design a keyboard layout.
+that type of thing.
+
+Colemak was designed to make English text easier to write; the author didn't
+try to optimise the positions of symbols. In fact, other than moving the
+semicolon/colon key, all symbol keys were left untouched to make colemak easier
+to learn. With that in mind, it shouldn't be surprising to find that someone
+tries to optimise symbol keys (indeed if you read through the colemak forums,
+you will find several other such attempts).
+
+So what was my approach? Of course, the best keys on the keyboard are already
+taken — we use them for typing letters, not numbers, operators and other
+symbols. I took my inspiration from the [neo](http://www.neo-layout.org/)
+layout: use an extra shift key. It turns out that XKB (the linux keyboard layout
+system) has good support for 4 levels of input per key (unshifted, with shift,
+with alt, with alt+shift). It even supports 8 levels per key (I think this is
+mainly used in Cyrillic languages). So all I had to do was activate a second
+shift key, and add some symbols to the other keys. Oh, and design a keyboard
+layout.
 
 
 The layout
@@ -84,6 +92,11 @@ you're a bit confused by the `' ä ö ü à é è` keys on the right, these are 
 modified swiss layout. Don't worry, there are other variants if you don't need
 the german/french letters.
 
+The above also includes a few dead keys for typing various accented letters:
+keys like `^¹û` mean the dead key produces the first glyph when combined with
+itself, and other glyphs when combined with other keys (in this case `alt+c,
+alt+c` produces a chevron, and `alt+c, 1` produces a superscript 1).
+
 Variants of the layout:
 
 *   **colemak** — US keyboard, colemak layout and progsyms
@@ -98,6 +111,37 @@ Variants of the layout:
 Other variants are quite easy to think of, but since near limitless
 combinations are possible defining other variants is left as an exercise to the
 reader (see the section below on customising the layout).
+
+### Why this layout in particular?
+
+Quite a bit of thought and time has gone into creating this layout.
+
++   I started the design on the basis that a symmetrical layout (each key on the
+left hand corresponding to a related/opposite key on the right hand) would make
+it easier to remember. If you look at the operators and the brackets in
+particular you should be able to spot this symmetry; unfortunately there was no
+obvious way to apply this to all keys and still fit all the symbols I wanted in,
+hence the bottom row is rather a jumble.
++   The design tries to make nearly all symbols you might want to use available
+on the standard 3 rows of the keyboard. Numbers (other than the frequently used
+0 and 1) are left on the top row since they're not so difficult to access from
+there.
++   I have "evolved" the design over time: every so often deciding *such and
+such* would be better *there* and *another key* could be placed *over there*.
+Unlike [carpalx](http://mkweb.bcgsc.ca/carpalx/?home) it's not
+computer optimised — it's *me optimised* to be easy to remember and comfortable
+to type on (I saw no obvious way to formalise comfort and memorability, and
+wasn't really convinced that the methods used in the carpalx generator took
+everything necessary into account).
+
+So is this layout well optimised in general or more importantly for *your*
+usage? The answer isn't obvious (but most likely the answer is **no**: a more
+optimal layout could be found). However concentrating solely on whether or not
+this is the **best** layout is somewhat missing the point: the question you are
+probably asking is *is it worth me learning?* Of course, I cannot answer that
+for you, but I can tell you I find this layout a *massive* improvement over
+standard qwerty or colemak, not just for programming but also for writing plain
+text.
 
 
 Installation on linux
