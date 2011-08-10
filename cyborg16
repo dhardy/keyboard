@@ -31,18 +31,19 @@
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃`èù┊´éú┊¨ëü┊ £ ┊ € ┊ ¤ ┊^¹û┊¯ēū┊ · ┊˘ĕŭ┊   ┊ − ┊ ≡ ┊ BckSp ┃
 //  ┃ Tab ┊ < ┊ { ┊ / ┊ | ┊ % ┊ ^ ┊ & ┊ * ┊ } ┊ > ┊ é ┊ è ┊  #  ┃
-//  ┃ BkSp ┊ [ ┊ ( ┊ - ┊ : ┊ 0 ┊ 1 ┊ = ┊ + ┊ ) ┊ ] ┊ à ┊  Enter ┃
-//  ┃ Shift  ┊ ' ┊ " ┊ ` ┊ ! ┊ $ ┊ # ┊ — ┊ ; ┊ : ┊ \ ┊  Shift   ┃
-//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┃ BkSp ┊ [ ┊ ( ┊ - ┊ ! ┊ 0 ┊ 1 ┊ = ┊ + ┊ ) ┊ ] ┊ à ┊  Enter ┃
+//  ┃ Shift  ┊ ` ┊ " ┊^¹û┊ $ ┊ \ ┊ _ ┊ — ┊ ; ┊ : ┊ # ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ _                  ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ‘ ┊ ’ ┊ “ ┊ ” ┊ ¢ ┊   ┊   ┊ ÷ ┊ × ┊   ┊   ┊ — ┊ ± ┊ BckSp ┃
 //  ┃ Tab ┊ ≤ ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
 //  ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊ + ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
-//  ┃ Shift  ┊   ┊   ┊ ç ┊   ┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
-//  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
+//  ┃ Shift  ┊   ┊   ┊ ç ┊^¹û┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
+//  ┃Fn ┊Ctrl┊Wn┊Alt┊ _                  ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+// Shift+,/. are not well used atm. Could replace with ç and something.
 
 
 partial alphanumeric_keys
@@ -80,7 +81,7 @@ xkb_symbols "prog_intl" {
     key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       0x1002209	] };
     key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       0x1002208	] };
     key <AC03> { [     NoSymbol,     NoSymbol,           minus,       0x1002212	] };
-    key <AC04> { [     NoSymbol,     NoSymbol,           colon,       NoSymbol	] };
+    key <AC04> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol	] };
     key <AC05> { [     NoSymbol,     NoSymbol,               0,       NoSymbol	] };
     key <AC06> { [     NoSymbol,     NoSymbol,               1,       NoSymbol	] };
     key <AC07> { [     NoSymbol,     NoSymbol,           equal,       0x1002261	] };
@@ -89,16 +90,16 @@ xkb_symbols "prog_intl" {
     key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       0x100220C	] };
     key <AC11> { [     NoSymbol,     NoSymbol,        NoSymbol,       dead_diaeresis	] };
     
-    key <AB01> { [     NoSymbol,     NoSymbol,      apostrophe,       NoSymbol	] };
+    key <AB01> { [     NoSymbol,     NoSymbol,           grave,       NoSymbol	] };
     key <AB02> { [     NoSymbol,     NoSymbol,        quotedbl,       NoSymbol	] };
-    key <AB03> { [     NoSymbol,     NoSymbol,           grave,       NoSymbol	] };
-    key <AB04> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol	] };
-    key <AB05> { [     NoSymbol,     NoSymbol,          dollar,       NoSymbol	] };
-    key <AB06> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol	] };
+    key <AB03> { [     NoSymbol,     NoSymbol, dead_circumflex,       NoSymbol	] };
+    key <AB04> { [     NoSymbol,     NoSymbol,          dollar,       dead_circumflex	] };
+    key <AB05> { [     NoSymbol,     NoSymbol,       backslash,       NoSymbol	] };
+    key <AB06> { [     NoSymbol,     NoSymbol,      underscore,       NoSymbol	] };
     key <AB07> { [     NoSymbol,     NoSymbol,       0x1002014,       mu	] };
     key <AB08> { [     NoSymbol,    semicolon,       semicolon,       guillemotleft	] };
     key <AB09> { [     NoSymbol,        colon,           colon,       guillemotright	] };
-    key <AB10> { [     NoSymbol,     NoSymbol,       backslash,       questiondown	] };
+    key <AB10> { [     NoSymbol,     NoSymbol,      numbersign,       questiondown	] };
 };
 
 // above with proper operators (division, multiplication and subtraction) for middle fingers, third level
