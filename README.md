@@ -90,14 +90,24 @@ The four diagrams show, in order, the unshifted glyphs, the shifted (capital)
 layer, the symbol layer, and the additional symbol/international layer. If
 you're a bit confused by the `' ä ö ü à é è` keys on the right, these are my
 modified swiss layout. Don't worry, there are other variants if you don't need
-the german/french letters.
+the german/french letters (in fact the only adjustments made to the first two
+levels with the basic variant are the `;`/`:` as shifted variants of the
+`,`/`.` keys).
 
 The above also includes a few dead keys for typing various accented letters:
 keys like `^¹û` mean the dead key produces the first glyph when combined with
 itself, and other glyphs when combined with other keys (in this case `alt+c,
 alt+c` produces a chevron, and `alt+c, 1` produces a superscript 1).
 
-Variants of the layout:
+Note that this design concentrated on optimising the third-level glyphs, with
+some symbols overflowing to the forth level. The forth level isn't highly
+optimised or heavily used. There are several glyphs exposed in both levels
+which don't usually appear on keyboards. My favourite addition has to be the
+m-dash — so useful for breaking sentences and so much neater than the usual
+hyphens!
+
+
+### Variants of the layout
 
 *   **colemak** — US keyboard, colemak layout and progsyms
 *   **colemak_ch** — US keyboard, colemak layout, Swiss-inspired accented keys
