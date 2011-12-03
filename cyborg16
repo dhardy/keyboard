@@ -44,7 +44,11 @@
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 // Shift+,/. are not well used atm. Could replace with ç and something.
+// ∋, ∌ are basically never useful.
 
+// Want to add at least the greek letters commonly used in mathematics (lower
+// and upper case) along with ⊦ (turn-stile), ↦ (maps to) and possibly
+// → (can be input as compose, ->).
 
 partial alphanumeric_keys
 xkb_symbols "prog_intl" {
