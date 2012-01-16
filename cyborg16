@@ -16,15 +16,15 @@
 
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
-//  ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ ' ┊ ö ┊ ü ┊  \  ┃
-//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ä ┊  Enter ┃
+//  ┃ Tab ┊ ä ┊ w ┊ f ┊ p ┊ g ┊ y ┊ l ┊ u ┊ ü ┊ ö ┊ j ┊ q ┊  \  ┃
+//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ' ┊  Enter ┃
 //  ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ , ┊ . ┊ / ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ~ ┊ ! ┊ @ ┊ # ┊ $ ┊ % ┊ ^ ┊ & ┊ * ┊ ( ┊ ) ┊ _ ┊ + ┊ BckSp ┃
-//  ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ " ┊ Ö ┊ Ü ┊  |  ┃
-//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ Ä ┊  Enter ┃
+//  ┃ Tab ┊ ä ┊ w ┊ f ┊ p ┊ g ┊ y ┊ l ┊ u ┊ ü ┊ ö ┊ j ┊ q ┊  |  ┃
+//  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ' ┊  Enter ┃
 //  ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ ; ┊ : ┊ ? ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -37,8 +37,8 @@
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ‘ ┊ ’ ┊ “ ┊ ” ┊ ¢ ┊   ┊   ┊ ÷ ┊ × ┊   ┊   ┊ — ┊ ± ┊ BckSp ┃
-//  ┃ Tab ┊ ≤ ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
-//  ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊ + ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
+//  ┃ Tab ┊ Å ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
+//  ┃ BkSp ┊ å ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊ + ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
 //  ┃ Shift  ┊   ┊   ┊ ç ┊^¹û┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ _                  ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -130,6 +130,25 @@ xkb_symbols "colemak" {
     key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
     
     include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak_ds" {
+    include "cyborg16(colemak)"
+    name[Group1]="US keyboard with ä, ö, ü, å and progsyms";
+    
+    key <AD01> { [ adiaeresis,    Adiaeresis,   NoSymbol,      Aring  ] };
+    key <AD06> { [          y,             Y,   NoSymbol,   NoSymbol  ] };
+    key <AD09> { [ udiaeresis,    Udiaeresis,   NoSymbol,   NoSymbol  ] };
+    key <AD10> { [ odiaeresis,    Odiaeresis,   NoSymbol,   NoSymbol  ] };
+    key <AD11> { [          j,             J,     eacute,     Eacute  ] };
+    key <AD12> { [          q,             Q,     egrave,     Egrave  ] };
+    
+    key <AC01> { [   NoSymbol,      NoSymbol,   NoSymbol,      aring  ] };
+    key <AC03> { [   NoSymbol,      NoSymbol,   NoSymbol,     ssharp  ] };
+    key <AC11> { [ apostrophe,      quotedbl,     agrave,     Agrave  ] };
+    
+    key <AB03> { [   NoSymbol,      NoSymbol,   NoSymbol,   ccedilla  ] };
 };
 
 partial alphanumeric_keys
