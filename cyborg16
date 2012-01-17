@@ -16,7 +16,7 @@
 
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
-//  ┃ Tab ┊ ä ┊ w ┊ f ┊ p ┊ g ┊ y ┊ l ┊ u ┊ ü ┊ ö ┊ j ┊ q ┊  \  ┃
+//  ┃ Tab ┊ ä ┊ w ┊ f ┊ p ┊ g ┊ y ┊ l ┊ u ┊ ü ┊ ö ┊ j ┊ q ┊  _  ┃
 //  ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ' ┊  Enter ┃
 //  ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ , ┊ . ┊ / ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
@@ -80,7 +80,7 @@ xkb_symbols "prog_intl" {
     key <AD10> { [     NoSymbol,     NoSymbol,         greater,       0x1002265	] };
     key <AD11> { [     NoSymbol,     NoSymbol,        NoSymbol,       leftarrow	] };
     key <AD12> { [     NoSymbol,     NoSymbol,        NoSymbol,       rightarrow	] };
-    key <BKSL> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol        ] };
+    key <BKSL> { [   underscore,          bar,      numbersign,       NoSymbol        ] };
     
     key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       0x1002209	] };
     key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       0x1002208	] };
