@@ -18,14 +18,14 @@
 // │ ~ ‘ │ ! ’ │ @ “ │ # ” │ $ ¢ │ % ˛ų│ ^ ˇǔ│ & ÷ │ * × │ ( ̛ư│ ) °ů│ _ — │ + ± ┃ ⌫ Back-  ┃
 // │ ` `ù│ 1 ´ú│ 2 ¨ü│ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ¯ū│ 8 · │ 9 ˘ŭ│ 0   │ - − │ = ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Ä Å │ W   │ F ÷ │ P √ │ G ~ │ Y ^û│ L   │ U × │ Ü   │ Ö ≥ │ J É │ J ̨È ┃       ┃
-// ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ %   │ y ^ │ l & │ u * │ ü } │ ö > │ j é │ q è ┃       ┃
+// ┃        ┃ Ä Å │ Y   │ F ÷ │ P √ │ G ~ │ Ü ^û│ L   │ U × │ W   │ Ö ≥ │ J É │ J ̨È ┃       ┃
+// ┃ Tab ↹  ┃ ä < │ y { │ f / │ p | │ %   │ ü ^ │ l & │ u * │ w } │ ö > │ j é │ q è ┃       ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃ Back-  ⌫ ┃ A å │ R ∈ │ S ß │ T   │ D ~ │ H ~ │ N ≡ │ E + │ I ∋ │ O ∋ │ " À ┃           ┃
 // ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d 0 │ h 1 │ n = │ e + │ i ) │ o ] │ ' à ┃ ⏎ Enter   ┃
 // ┣━━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━┫
-// ┃             ┃ Z   │ X   │ C ç │ V ^û│ B ~ │ K ~ │ M µ │ ; « │ : » │ ? ¿ ┃              ┃
-// ┃Shift ⇧      ┃ z ` │ x " │ c ^û│ v $ │ b \ │ k _ │ m — │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
+// ┃             ┃ Z   │ X   │ C Ç │ V ^û│ B ~ │ K ~ │ M µ │ ; « │ : » │ ? ¿ ┃              ┃
+// ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b \ │ k _ │ m — │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
 // ┣━━━━━┳━━━━━━━╋━━━━┳┷━━━━┱┴─────┴─────┴─────┴─────┴─────╆━━━━━╈━━━━━╈━━━━━╋━━━━┯━━━━┯━━━━┩
 // ┃     ┃       ┃    ┃     ┃ ␣        Unbreakable space ⍽ ┃    ⇮┃     ┃     ┃PgBk│↑   │PgFd│
 // ┃Fn   ┃Ctrl   ┃Meta┃Alt  ┃ ␣ Space                    ␣ ┃AltGr┃Menu ┃Ctrl ┠────┼────┼────┤
@@ -127,8 +127,9 @@ xkb_symbols "colemak_ds" {
     name[Group1]="US keyboard with ä, ö, ü, å and progsyms";
     
     key <AD01> { [ adiaeresis,    Adiaeresis,   NoSymbol,      Aring  ] };
-    key <AD06> { [          y,             Y,   NoSymbol,   NoSymbol  ] };
-    key <AD09> { [ udiaeresis,    Udiaeresis,   NoSymbol,   NoSymbol  ] };
+    key <AD02> { [          y,             Y,   NoSymbol,   NoSymbol  ] };
+    key <AD06> { [ udiaeresis,    Udiaeresis,   NoSymbol,   NoSymbol  ] };
+    key <AD09> { [          w,             W,   NoSymbol,   NoSymbol  ] };
     key <AD10> { [ odiaeresis,    Odiaeresis,   NoSymbol,   NoSymbol  ] };
     key <AD11> { [          j,             J,     eacute,     Eacute  ] };
     key <AD12> { [          q,             Q,     egrave,     Egrave  ] };
@@ -137,7 +138,7 @@ xkb_symbols "colemak_ds" {
     key <AC03> { [   NoSymbol,      NoSymbol,   NoSymbol,     ssharp  ] };
     key <AC11> { [ apostrophe,      quotedbl,     agrave,     Agrave  ] };
     
-    key <AB03> { [   NoSymbol,      NoSymbol,   NoSymbol,   ccedilla  ] };
+    key <AB03> { [   NoSymbol,      NoSymbol,   ccedilla,   Ccedilla  ] };
 };
 
 partial alphanumeric_keys
