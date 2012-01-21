@@ -1,19 +1,41 @@
- DHardy's keyboard layouts
+DHardy's keyboard layouts
 =================
 
 Colemak
 -----------
 
-What keyboard layout do you use? Standard Qwerty, Dvorak, or something else?
-Well, that's your choice, not mine, but if you want a recommendation mine would
-be [Colemak](http://colemak.com/). Both Dvorak and Colemak are significantly
-more comfortable than Qwerty *for typing*. But maybe there's other things you
-do besides typing text: it turns out use of Ctrl+z, Ctrl+x, Ctrl+c and
-Ctrl+v (suspend/undo, cut, kill command/copy, paste) are very commonly used on
-PCs based on their convenient positions in the Qwerty layout. This (and the
-capslock-is-backspace option) is easily the biggest reason not to use Dvorak
-(well, assuming you're willing to spend a little time getting used to a new
-layout); thankfully Colemak keeps these keys in their Qwerty position.
+What keyboard layout do you use? Standard Qwerty, Dvorak,
+[neo](http://neo-layout.org/), [Colemak](http://colemak.com/), or something
+else?
+
+I see only two reasons for abandoning Qwerty:
+
++   Ease of typing. I haven't used neo, but both Colemak and Dvorak, after
+    fingers become used to the new workloads, are significantly more
+    comfortable to type on than Qwerty ever was. (This will probably lead to
+    lower error rates _and_ higher speeds when proficient, by the way.)
++   Ease of entering symbols. Want to use signs like ÷, £, ä, → and ≠? Most of
+    these have been available in some keyboard layouts for a long time, and
+    others not too hard to enter anyway (e.g. compose+`-`+`>` yields `→` on
+    linux), but they could be easier, especially characters like ä, ö, ü (or
+    à, é, è, depending on language).
+    
+    My original reason, though, for customising keyboard layouts, is because,
+    programming, I want to write things like
+    `while( list[i] != 0 ){ sum += list[i]; ++i; }` a lot. Not having to grope
+    for +, { and ! from difficult-to-reach positions is much nicer.
+
+Whichever your reason for switching, you should bear another factor in mind:
+practicality. Consider:
+
++   Shortcuts. Ctrl+C and Ctrl+Z are very common shortcuts — probably used more
+    than 'z' and 'c' are entered themselves. Although you _could_ change the
+    bindings in most applications to use the same physical keys, this isn't so
+    convenient and doesn't always work expectedly; for this reason I don't
+    recommend Dvorak or neo.
++   Can you use your layout on most machines? Unlike Dvorak, neo and standard
+    Colemak, my layout is only available for linux and only where you can
+    convince the administrator to install the layout.
 
 
 Colemak + symbol layout
@@ -53,58 +75,7 @@ layout.
 The layout
 --------------
 
-I'll copy and paste my charts from the 'cyborg16' XKB file. They're designed to
-be read with a fixed-width font, so if the lines don't match up you'd better
-find some other way of viewing the tables.
-
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
-    ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ ' ┊ ö ┊ ü ┊  \  ┃
-    ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ ä ┊  Enter ┃
-    ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ , ┊ . ┊ / ┊  Shift   ┃
-    ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃ ~ ┊ ! ┊ @ ┊ # ┊ $ ┊ % ┊ ^ ┊ & ┊ * ┊ ( ┊ ) ┊ _ ┊ + ┊ BckSp ┃
-    ┃ Tab ┊ q ┊ w ┊ f ┊ p ┊ g ┊ j ┊ l ┊ u ┊ y ┊ " ┊ Ö ┊ Ü ┊  |  ┃
-    ┃ BkSp ┊ A ┊ R ┊ S ┊ T ┊ d ┊ h ┊ N ┊ E ┊ I ┊ O ┊ Ä ┊  Enter ┃
-    ┃ Shift  ┊ z ┊ x ┊ c ┊ v ┊ b ┊ k ┊ m ┊ ; ┊ : ┊ ? ┊  Shift   ┃
-    ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃`èù┊´éú┊¨ëü┊ £ ┊ € ┊ ¤ ┊^¹û┊¯ēū┊ · ┊˘ĕŭ┊   ┊ − ┊ ≡ ┊ BckSp ┃
-    ┃ Tab ┊ < ┊ { ┊ / ┊ | ┊ % ┊ ^ ┊ & ┊ * ┊ } ┊ > ┊ é ┊ è ┊  #  ┃
-    ┃ BkSp ┊ [ ┊ ( ┊ - ┊ ! ┊ 0 ┊ 1 ┊ = ┊ + ┊ ) ┊ ] ┊ à ┊  Enter ┃
-    ┃ Shift  ┊ ` ┊ " ┊^¹û┊ $ ┊ \ ┊ _ ┊ — ┊ ; ┊ : ┊ # ┊  Shift   ┃
-    ┃Fn ┊Ctrl┊Wn┊Alt┊ _                  ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃ ‘ ┊ ’ ┊ “ ┊ ” ┊ ¢ ┊   ┊   ┊ ÷ ┊ × ┊   ┊   ┊ — ┊ ± ┊ BckSp ┃
-    ┃ Tab ┊ ≤ ┊   ┊ ÷ ┊ √ ┊   ┊^¹û┊   ┊ × ┊   ┊ ≥ ┊ É ┊ È ┊     ┃
-    ┃ BkSp ┊ ∉ ┊ ∈ ┊ ß ┊   ┊   ┊   ┊ ≡ ┊ + ┊ ∋ ┊ ∌ ┊ À ┊  Enter ┃
-    ┃ Shift  ┊   ┊   ┊ ç ┊^¹û┊   ┊   ┊ µ ┊ « ┊ » ┊ ¿ ┊  Shift   ┃
-    ┃Fn ┊Ctrl┊Wn┊Alt┊ _                  ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-The four diagrams show, in order, the unshifted glyphs, the shifted (capital)
-layer, the symbol layer, and the additional symbol/international layer. If
-you're a bit confused by the `' ä ö ü à é è` keys on the right, these are my
-modified swiss layout. Don't worry, there are other variants if you don't need
-the german/french letters (in fact the only adjustments made to the first two
-levels with the basic variant are the `;`/`:` as shifted variants of the
-`,`/`.` keys).
-
-The above also includes a few dead keys for typing various accented letters:
-keys like `^¹û` mean the dead key produces the first glyph when combined with
-itself, and other glyphs when combined with other keys (in this case `alt+c,
-alt+c` produces a chevron, and `alt+c, 1` produces a superscript 1).
-
-Note that this design concentrated on optimising the third-level glyphs, with
-some symbols overflowing to the forth level. The forth level isn't highly
-optimised or heavily used. There are several glyphs exposed in both levels
-which don't usually appear on keyboards. My favourite addition has to be the
-m-dash — so useful for breaking sentences and so much neater than the usual
-hyphens!
+Have a look here: [cyborg16][]
 
 
 ### Variants of the layout
