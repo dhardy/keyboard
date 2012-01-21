@@ -18,8 +18,8 @@
 // │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ % ≤ │ ^ ≥ │ & ÷ │ * × │ ( ∉ │ ) ∌ │ _ — │ + ± ┃ ⌫ Back-  ┃
 // │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ¯ū│ 8 · │ 9 ∈ │ 0 ∋ │ - − │ = ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Ä Å │ Y υ │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ W × │ Ö ß │ J É │ J ̨È ┃ | \   ┃
-// ┃ Tab ↹  ┃ ä å │ y / │ f - │ p | │ g % │ ü ^ │ l & │ u + │ w * │ ö ≠ │ j é │ q è ┃ _ #   ┃
+// ┃        ┃ Ä Å │ W ÷ │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ Y υ │ Ö ß │ J É │ Q ̨È ┃ | \   ┃
+// ┃ Tab ↹  ┃ ä å │ w / │ f - │ p | │ g % │ ü ^ │ l & │ u + │ y * │ ö ≠ │ j é │ q è ┃ _ #   ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ " À ┃           ┃
 // ┃ space    ┃ a [ │ r ( │ s { │ t ! │ d < │ h > │ n = │ e } │ i ) │ o ] │ ' à ┃ ⏎ Enter   ┃
@@ -35,7 +35,8 @@
 // Keys which could be put to better uses:
 // alt: b OR k m ö     7
 // alt+shift:   wÖ 3 56 8-
-// displaced: Ç dead-circumflex
+// backslash and minus/hyphen are repeated a lot
+// displaced: Ç dead-circumflex some greek capitals: gamma, delta, sigma and pi are used at times.
 
 partial alphanumeric_keys
 xkb_symbols "prog_intl" {
@@ -56,14 +57,14 @@ xkb_symbols "prog_intl" {
     key <AE12> { [     NoSymbol,     NoSymbol,       0x1002261,       plusminus	] }; // ≡ ±
     
     key <AD01> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol	] };
-    key <AD02> { [     NoSymbol,     NoSymbol,           slash,       Greek_upsilon	] };
+    key <AD02> { [     NoSymbol,     NoSymbol,           slash,       division	] };
     key <AD03> { [     NoSymbol,     NoSymbol,           minus,       Greek_phi	] };
     key <AD04> { [     NoSymbol,     NoSymbol,             bar,       Greek_pi	] };
     key <AD05> { [     NoSymbol,     NoSymbol,         percent,       Greek_gamma	] };
     key <AD06> { [     NoSymbol,     NoSymbol,     asciicircum,       Greek_xi	] };
     key <AD07> { [     NoSymbol,     NoSymbol,       ampersand,       Greek_lambda	] };
     key <AD08> { [     NoSymbol,     NoSymbol,            plus,       Greek_theta	] };
-    key <AD09> { [     NoSymbol,     NoSymbol,        asterisk,       multiply	] };
+    key <AD09> { [     NoSymbol,     NoSymbol,        asterisk,       Greek_upsilon	] };
     key <AD10> { [     NoSymbol,     NoSymbol,       0x1002260,       NoSymbol	] };
     key <AD11> { [     NoSymbol,     NoSymbol,        NoSymbol,       leftarrow	] };
     key <AD12> { [     NoSymbol,     NoSymbol,        NoSymbol,       rightarrow	] };
@@ -124,9 +125,7 @@ xkb_symbols "colemak_ds" {
     name[Group1]="US keyboard with ä, ö, ü, å and progsyms";
     
     key <AD01> { [ adiaeresis,    Adiaeresis,      aring,      Aring  ] };
-    key <AD02> { [          y,             Y,   NoSymbol,   NoSymbol  ] };
     key <AD06> { [ udiaeresis,    Udiaeresis,   NoSymbol,   NoSymbol  ] };
-    key <AD09> { [          w,             W,   NoSymbol,   NoSymbol  ] };
     key <AD10> { [ odiaeresis,    Odiaeresis,   NoSymbol,   ssharp  ] };
     key <AD11> { [          j,             J,     eacute,     Eacute  ] };
     key <AD12> { [          q,             Q,     egrave,     Egrave  ] };
