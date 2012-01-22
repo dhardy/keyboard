@@ -75,7 +75,8 @@ layout.
 The layout
 --------------
 
-Have a look here: [cyborg16]()
+Have a look here:
+[cyborg16](https://github.com/dhardy/keyboard/blob/master/cyborg16)
 
 
 ### Variants of the layout
