@@ -75,7 +75,7 @@ layout.
 The layout
 --------------
 
-Have a look here: [cyborg16][]
+Have a look here: [cyborg16]()
 
 
 ### Variants of the layout
