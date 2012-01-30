@@ -3,8 +3,8 @@
 // Difficulty to reach (under index finger: 1 - 8)
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 //  ┃ ` ┊ 1 ┊ 2 ┊ 3 ┊ 4 ┊ 5 ┊ 6 ┊ 7 ┊ 8 ┊ 9 ┊ 0 ┊ - ┊ = ┊ BckSp ┃
-//  ┃ Tab ┊ 4 ┊ 2 ┊ 2 ┊ 2 ┊ 5 ┊ 8 ┊ 4 ┊ 2 ┊ 2 ┊ 4 ┊ 3 ┊ 5 ┊  6  ┃
-//  ┃ BkSp ┊ 2 ┊ 2 ┊ 2 ┊ 1 ┊ 3 ┊ 5 ┊ 1 ┊ 2 ┊ 2 ┊ 2 ┊ 4 ┊  Enter ┃
+//  ┃ Tab ┊ 3 ┊ 2 ┊ 2 ┊ 3 ┊ 6 ┊ 8 ┊ 4 ┊ 2 ┊ 2 ┊ 3 ┊ 3 ┊ 5 ┊  6  ┃
+//  ┃ BkSp ┊ 2 ┊ 1 ┊ 1 ┊ 1 ┊ 3 ┊ 3 ┊ 1 ┊ 1 ┊ 1 ┊ 2 ┊ 4 ┊  Enter ┃
 //  ┃ Shift  ┊ 3 ┊ 3 ┊ 3 ┊ 3 ┊ 7 ┊ 4 ┊ 4 ┊ 4 ┊ 4 ┊ 3 ┊  Shift   ┃
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -15,82 +15,87 @@
 // "first", third and forth levels:
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ % ≤ │ ^ ≥ │ & ÷ │ * × │ ( ∉ │ ) ∌ │ _ — │ + ± ┃ ⌫ Back-  ┃
-// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ¯ū│ 8 · │ 9 ∈ │ 0 ∋ │ - − │ = ≡ ┃   space  ┃
+// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ % ≤ │ ^ ≥ │ & ÷ │ * × │ ( ∉ │ ) ∌ │ Å À │ Ü ± ┃ ⌫ Back-  ┃
+// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ¯ū│ 8 · │ 9 ∈ │ 0 ∋ │ å à │ ü ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Ä Å │ W ÷ │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ Y υ │ Ö ß │ J É │ Q ̨È ┃ | \   ┃
-// ┃ Tab ↹  ┃ ä å │ w / │ f - │ p | │ g % │ ü ^ │ l & │ u + │ y * │ ö ≠ │ j é │ q è ┃ _ #   ┃
+// ┃        ┃ Ä Å │ W   │ F φ │ P π │ G γ │ - ξ │ L λ │ U θ │ Y υ │ Ö ß │ J É │ Q ̨È ┃ |     ┃
+// ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ g % │ _ ^ │ l & │ u * │ y } │ ö > │ j é │ q è ┃ \ #   ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ " À ┃           ┃
-// ┃ space    ┃ a [ │ r ( │ s { │ t ! │ d < │ h > │ n = │ e } │ i ) │ o ] │ ' à ┃ ⏎ Enter   ┃
+// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ "   ┃           ┃
+// ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ '   ┃ ⏎ Enter   ┃
 // ┣━━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━┫
 // ┃             ┃ Z ζ │ X χ │ C ψ │ V ω │ B β │ K κ │ M μ │ _ « │ — » │ ? ¿ ┃              ┃
-// ┃Shift ⇧      ┃ z - │ x 0 │ c ç │ v $ │ b \ │ k \ │ m - │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
+// ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b \ │ k 1 │ m 0 │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
 // ┣━━━━━┳━━━━━━━╋━━━━┳┷━━━━┱┴─────┴─────┴─────┴─────┴─────╆━━━━━╈━━━━━╈━━━━━╋━━━━┯━━━━┯━━━━┩
 // ┃     ┃       ┃    ┃     ┃ ␣        Unbreakable space ⍽ ┃    ⇮┃     ┃     ┃PgBk│↑   │PgFd│
 // ┃Fn   ┃Ctrl   ┃Meta┃Alt  ┃ ␣ Space                    ␣ ┃AltGr┃Menu ┃Ctrl ┠────┼────┼────┤
 // ┗━━━━━┻━━━━━━━┻━━━━┻━━━━━┹──────────────────────────────┺━━━━━┻━━━━━┻━━━━━┩←   │↓   │→   │
 //                                                                           └────┴────┴────┘
 
+// Order of significance (OpenMalaria/C++):
+// : *()/_; @-<>&{}0=" #+35![]'%\|~
+// In many things (mostly C++ and text):
+// 10 : )( /*-; "+={}>< & @# \!' [] |`%?
+
 // Keys which could be put to better uses:
-// alt: b OR k m ö     7
-// alt+shift:   wÖ 3 56 8-
-// backslash and minus/hyphen are repeated a lot
-// displaced: Ç dead-circumflex some greek capitals: gamma, delta, sigma and pi are used at times.
+// alt:		b OR d 7 '
+// alt+shift:	w ö 5 6 ü
+// displaced: Ç dead-circumflex
+// some greek capitals: gamma, delta, sigma and pi are used at times.
 
 partial alphanumeric_keys
 xkb_symbols "prog_intl" {
     name[Group1]="3rd-level symbols for programmers";
     
-    key <TLDE> { [     NoSymbol,     NoSymbol,         notsign,       0x10022A6	] }; // ¬ ⊦
-    key <AE01> { [     NoSymbol,     NoSymbol,       leftarrow,       downarrow	] };
-    key <AE02> { [     NoSymbol,     NoSymbol,      rightarrow,       uparrow	] };
-    key <AE03> { [     NoSymbol,     NoSymbol,        sterling,       0x10021A6	] }; // £ ↦
-    key <AE04> { [     NoSymbol,     NoSymbol,        EuroSign,       cent	] };
-    key <AE05> { [     NoSymbol,     NoSymbol,        currency,       0x1002264	] }; // ¤ ≤
-    key <AE06> { [     NoSymbol,     NoSymbol, dead_circumflex,       0x1002265	] }; // ≥
-    key <AE07> { [     NoSymbol,     NoSymbol,     dead_macron,       division	] };
-    key <AE08> { [     NoSymbol,     NoSymbol,  periodcentered,       multiply	] };
-    key <AE09> { [     NoSymbol,     NoSymbol,       0x1002208,       0x1002209	] }; // ∈ ∉
-    key <AE10> { [     NoSymbol,     NoSymbol,       0x100220B,       0x100220C	] }; // ∋ ∌
-    key <AE11> { [     NoSymbol,     NoSymbol,       0x1002212,       0x1002014	] }; // − (minus) — (m-dash)
-    key <AE12> { [     NoSymbol,     NoSymbol,       0x1002261,       plusminus	] }; // ≡ ±
+    key <TLDE> { [ NoSymbol,	NoSymbol,	notsign,	0x10022A6	] }; // ¬ ⊦
+    key <AE01> { [ NoSymbol,	NoSymbol,	leftarrow,	downarrow	] }; // ← ↓
+    key <AE02> { [ NoSymbol,	NoSymbol,	rightarrow,	uparrow		] }; // → ↑
+    key <AE03> { [ NoSymbol,	NoSymbol,	sterling,	0x10021A6	] }; // £ ↦
+    key <AE04> { [ NoSymbol,	NoSymbol,	EuroSign,	cent		] }; // € ¢
+    key <AE05> { [ NoSymbol,	NoSymbol,	currency,	0x1002264	] }; // ¤ ≤
+    key <AE06> { [ NoSymbol,	NoSymbol,	dead_circumflex,0x1002265	] }; // û ≥
+    key <AE07> { [ NoSymbol,	NoSymbol,	dead_macron,	division	] }; // ū ÷
+    key <AE08> { [ NoSymbol,	NoSymbol,	periodcentered,	multiply	] }; // · ×
+    key <AE09> { [ NoSymbol,	NoSymbol,	0x1002208,	0x1002209	] }; // ∈ ∉
+    key <AE10> { [ NoSymbol,	NoSymbol,	0x100220B,	0x100220C	] }; // ∋ ∌
+    key <AE11> { [ NoSymbol,	NoSymbol,	0x1002212,	0x1002014	] }; // − — (minus, m-dash)
+    key <AE12> { [ NoSymbol,	NoSymbol,	0x1002261,	plusminus	] }; // ≡ ±
     
-    key <AD01> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol	] };
-    key <AD02> { [     NoSymbol,     NoSymbol,           slash,       division	] };
-    key <AD03> { [     NoSymbol,     NoSymbol,           minus,       Greek_phi	] };
-    key <AD04> { [     NoSymbol,     NoSymbol,             bar,       Greek_pi	] };
-    key <AD05> { [     NoSymbol,     NoSymbol,         percent,       Greek_gamma	] };
-    key <AD06> { [     NoSymbol,     NoSymbol,     asciicircum,       Greek_xi	] };
-    key <AD07> { [     NoSymbol,     NoSymbol,       ampersand,       Greek_lambda	] };
-    key <AD08> { [     NoSymbol,     NoSymbol,            plus,       Greek_theta	] };
-    key <AD09> { [     NoSymbol,     NoSymbol,        asterisk,       Greek_upsilon	] };
-    key <AD10> { [     NoSymbol,     NoSymbol,       0x1002260,       NoSymbol	] };
-    key <AD11> { [     NoSymbol,     NoSymbol,        NoSymbol,       leftarrow	] };
-    key <AD12> { [     NoSymbol,     NoSymbol,        NoSymbol,       rightarrow	] };
-    key <BKSL> { [   underscore,          bar,      numbersign,       backslash	] };
+    key <AD01> { [ NoSymbol,	NoSymbol,	less,		0x1002264	] }; // < ≤
+    key <AD02> { [ NoSymbol,	NoSymbol,	braceleft,	NoSymbol	] }; // {
+    key <AD03> { [ NoSymbol,	NoSymbol,	slash,		Greek_phi	] }; // / φ
+    key <AD04> { [ NoSymbol,	NoSymbol,	bar,		Greek_pi	] }; // | π
+    key <AD05> { [ NoSymbol,	NoSymbol,	percent,	Greek_gamma	] }; // % γ
+    key <AD06> { [ NoSymbol,	NoSymbol,	asciicircum,	Greek_xi	] }; // ^ ξ
+    key <AD07> { [ NoSymbol,	NoSymbol,	ampersand,	Greek_lambda	] }; // & λ
+    key <AD08> { [ NoSymbol,	NoSymbol,	asterisk,	Greek_theta	] }; // * θ
+    key <AD09> { [ NoSymbol,	NoSymbol,	braceright,	Greek_upsilon	] }; // } υ
+    key <AD10> { [ NoSymbol,	NoSymbol,	greater,	NoSymbol	] }; // >
+    key <AD11> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AD12> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <BKSL> { [ backslash,	bar,		numbersign,	brokenbar	] };
     
-    key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       Greek_alpha	] };
-    key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       Greek_rho	] };
-    key <AC03> { [     NoSymbol,     NoSymbol,       braceleft,       Greek_sigma	] };
-    key <AC04> { [     NoSymbol,     NoSymbol,          exclam,       Greek_tau	] };
-    key <AC05> { [     NoSymbol,     NoSymbol,            less,       Greek_delta	] };
-    key <AC06> { [     NoSymbol,     NoSymbol,         greater,       Greek_eta	] };
-    key <AC07> { [     NoSymbol,     NoSymbol,           equal,       Greek_nu	] };
-    key <AC08> { [     NoSymbol,     NoSymbol,      braceright,       Greek_epsilon	] };
-    key <AC09> { [     NoSymbol,     NoSymbol,      parenright,       Greek_iota	] };
-    key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       Greek_omicron	] };
+    key <AC01> { [ NoSymbol,	NoSymbol,	bracketleft,	Greek_alpha	] }; // [ α
+    key <AC02> { [ NoSymbol,	NoSymbol,	parenleft,	Greek_rho	] }; // ( ρ
+    key <AC03> { [ NoSymbol,	NoSymbol,	minus,		Greek_sigma	] }; // - σ
+    key <AC04> { [ NoSymbol,	NoSymbol,	exclam,		Greek_tau	] }; // ! τ
+    key <AC05> { [ NoSymbol,	NoSymbol,	backslash,	Greek_delta	] }; // \ δ
+    key <AC06> { [ NoSymbol,	NoSymbol,	0x1002260,	Greek_eta	] }; // ≠ η
+    key <AC07> { [ NoSymbol,	NoSymbol,	equal,		Greek_nu	] }; // = ν
+    key <AC08> { [ NoSymbol,	NoSymbol,	plus,		Greek_epsilon	] }; // + ε
+    key <AC09> { [ NoSymbol,	NoSymbol,	parenright,	Greek_iota	] }; // ) ι
+    key <AC10> { [ NoSymbol,	NoSymbol,	bracketright,	Greek_omicron	] }; // ] ο
     
-    key <AB01> { [     NoSymbol,     NoSymbol,           minus,       Greek_zeta	] };
-    key <AB02> { [     NoSymbol,     NoSymbol,               0,       Greek_chi	] };
-    key <AB03> { [     NoSymbol,     NoSymbol,        NoSymbol,       Greek_psi	] };
-    key <AB04> { [     NoSymbol,     NoSymbol,          dollar,       Greek_omega	] };
-    key <AB05> { [     NoSymbol,     NoSymbol,       backslash,       Greek_beta	] };
-    key <AB06> { [     NoSymbol,     NoSymbol,       backslash,       Greek_kappa	] };
-    key <AB07> { [     NoSymbol,     NoSymbol,           minus,       Greek_mu	] };
-    key <AB08> { [     NoSymbol,   underscore,       semicolon,       guillemotleft	] };
-    key <AB09> { [     NoSymbol,    0x1002014,           colon,       guillemotright	] }; // — (m-dash)
-    key <AB10> { [     NoSymbol,     NoSymbol,      numbersign,       questiondown	] };
+    key <AB01> { [ NoSymbol,	NoSymbol,	grave,		Greek_zeta	] }; // ` ζ
+    key <AB02> { [ NoSymbol,	NoSymbol,	quotedbl,	Greek_chi	] }; // " χ
+    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_psi	] }; //   ψ
+    key <AB04> { [ NoSymbol,	NoSymbol,	dollar,		Greek_omega	] }; // $ ω
+    key <AB05> { [ NoSymbol,	NoSymbol,	backslash,	Greek_beta	] }; // \ β
+    key <AB06> { [ NoSymbol,	NoSymbol,	1,		Greek_kappa	] }; // 1 κ
+    key <AB07> { [ NoSymbol,	NoSymbol,	0,		Greek_mu	] }; // 0 μ
+    key <AB08> { [ NoSymbol,	underscore,	semicolon,	guillemotleft	] }; // _ ; «
+    key <AB09> { [ NoSymbol,	0x1002014,	colon,		guillemotright	] }; // — : »
+    key <AB10> { [ NoSymbol,	NoSymbol,	numbersign,	questiondown	] }; // # ¿
 };
 
 // above with proper operators (division, multiplication and subtraction) for middle fingers, third level
@@ -99,10 +104,10 @@ xkb_symbols "prog_ops" {
     name[Group1]="3rd-level symbols for programmers (real operators)";
     include "cyborg16(prog_intl)"
     
-    key <AD03> { [     NoSymbol,     NoSymbol,        division,       slash	] };
-    key <AD08> { [     NoSymbol,     NoSymbol,        multiply,       asterisk	] };
+    key <AD03> { [ NoSymbol,	NoSymbol,	division,	slash	] };
+    key <AD08> { [ NoSymbol,	NoSymbol,	multiply,	asterisk	] };
     
-    key <AC03> { [     NoSymbol,     NoSymbol,       0x1002212,       minus	] };
+    key <AC03> { [ NoSymbol,	NoSymbol,	0x1002212,	minus	] };
 };
 
 
@@ -114,7 +119,7 @@ xkb_symbols "colemak" {
     include "cyborg16(prog_intl)"
     name[Group1]="US keyboard, colemak and progsyms";
     
-    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
+    key <CAPS> { [ BackSpace,	BackSpace,	BackSpace,	BackSpace	] };
     
     include "level3(ralt_switch_multikey)"
 };
@@ -124,15 +129,18 @@ xkb_symbols "colemak_ds" {
     include "cyborg16(colemak)"
     name[Group1]="US keyboard with ä, ö, ü, å and progsyms";
     
-    key <AD01> { [ adiaeresis,    Adiaeresis,      aring,      Aring  ] };
-    key <AD06> { [ udiaeresis,    Udiaeresis,   NoSymbol,   NoSymbol  ] };
-    key <AD10> { [ odiaeresis,    Odiaeresis,   NoSymbol,   ssharp  ] };
-    key <AD11> { [          j,             J,     eacute,     Eacute  ] };
-    key <AD12> { [          q,             Q,     egrave,     Egrave  ] };
+    key <AE11> { [ aring,	Aring,		agrave,		Agrave] };
+    key <AE12> { [ udiaeresis,	Udiaeresis,	NoSymbol,	NoSymbol] };
     
-    key <AC11> { [ apostrophe,      quotedbl,     agrave,     Agrave  ] };
+    key <AD01> { [ adiaeresis,	Adiaeresis,	aring,		Aring	] };
+    key <AD06> { [ underscore,	minus,		NoSymbol,	NoSymbol] };
+    key <AD10> { [ odiaeresis,	Odiaeresis,	NoSymbol,	ssharp	] };
+    key <AD11> { [ j,		J,		eacute,		Eacute	] };
+    key <AD12> { [ q,		Q,		egrave,		Egrave	] };
     
-    key <AB03> { [   NoSymbol,      NoSymbol,   ccedilla,   NoSymbol  ] }; // Ccedilla overrides psi
+    key <AC11> { [ apostrophe,	quotedbl,	agrave,		Agrave	] };
+    
+    key <AB03> { [ NoSymbol,	NoSymbol,	ccedilla,	NoSymbol] }; // Ccedilla overrides psi
 };
 
 partial alphanumeric_keys
@@ -140,14 +148,14 @@ xkb_symbols "colemak_ch" {
     include "cyborg16(colemak)"
     name[Group1]="US keyboard, colemak, Swiss-inspired accented keys, and progsyms";
     
-    key <AD10> { [ apostrophe,      quotedbl,   NoSymbol,   NoSymbol  ] };
-    key <AD11> { [ odiaeresis,    Odiaeresis,     eacute,     Eacute  ] };
-    key <AD12> { [ udiaeresis,    Udiaeresis,     egrave,     Egrave  ] };
+    key <AD10> { [ apostrophe,	quotedbl,	NoSymbol,	NoSymbol] };
+    key <AD11> { [ odiaeresis,	Odiaeresis,	eacute,		Eacute	] };
+    key <AD12> { [ udiaeresis,	Udiaeresis,	egrave,		Egrave	] };
     
-    key <AC03> { [   NoSymbol,      NoSymbol,   NoSymbol,     ssharp  ] };
-    key <AC11> { [ adiaeresis,    Adiaeresis,     agrave,     Agrave  ] };
+    key <AC03> { [ NoSymbol,	NoSymbol,	NoSymbol,	ssharp	] };
+    key <AC11> { [ adiaeresis,	Adiaeresis,	agrave,		Agrave	] };
     
-    key <AB03> { [   NoSymbol,      NoSymbol,   NoSymbol,   ccedilla  ] };
+    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	ccedilla] };
 };
 
 partial alphanumeric_keys
@@ -155,15 +163,15 @@ xkb_symbols "colemak_ukch" {
     include "cyborg16(colemak_ch)"
     name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
     
-    key <AE02>  { [         2,         at ] };
-    key <AE03>  { [         3,   sterling ] };
-    key <AE04>  { [         4,     dollar, EuroSign ] };
+    key <AE02> { [ 2,		at	] };
+    key <AE03> { [ 3,		sterling] };
+    key <AE04> { [ 4,		dollar, 	EuroSign] };
     
-    //key <AC11>  { [apostrophe,   quotedbl ] };
-    key <TLDE>  { [     grave,    notsign ] };
+  //key <AC11> { [ apostrophe,	quotedbl] };
+    key <TLDE> { [ grave,	notsign	] };
     
-    key <BKSL>  { [numbersign, asciitilde ] };
-    key <LSGT>  { [ backslash,        bar,          bar,    brokenbar ] };
+    key <BKSL> { [ numbersign,	asciitilde ] };
+    key <LSGT> { [ backslash,	bar,		bar,	brokenbar] };
     
     include "level3(ralt_switch_multikey)"
 };
@@ -175,16 +183,16 @@ xkb_symbols "dvorak_uk" {
     
     name[Group1]="United Kingdom - Dvorak and progsyms";
     
-    key <AE02>  { [         2,         at ] };
-    key <AE03>  { [         3,   sterling ] };
-    key <AE04>  { [         4,     dollar, EuroSign ] };
+    key <AE02> { [ 2,		at	] };
+    key <AE03> { [ 3,		sterling] };
+    key <AE04> { [ 4,		dollar,		EuroSign] };
     
-    key <AD01> { [ apostrophe,  quotedbl        ] };
+    key <AD01> { [ apostrophe,  quotedbl] };
     
-    key <TLDE>  { [     grave,    notsign ] };
+    key <TLDE> { [ grave,	notsign	] };
     
-    key <BKSL>  { [numbersign, asciitilde ] };
-    key <LSGT>  { [ backslash,        bar,          bar,    brokenbar ] };
+    key <BKSL> { [ numbersign,	asciitilde	] };
+    key <LSGT> { [ backslash,	bar,		bar,	brokenbar	] };
     
     include "level3(ralt_switch_multikey)"
 };
@@ -206,15 +214,15 @@ xkb_symbols "basic_uk" {
     
     name[Group1]="United Kingdom - with progsyms";
     
-    key <AE02>  { [         2,         at ] };
-    key <AE03>  { [         3,   sterling ] };
-    key <AE04>  { [         4,     dollar, EuroSign ] };
+    key <AE02> { [ 2,		at ] };
+    key <AE03> { [ 3,		sterling ] };
+    key <AE04> { [ 4,		dollar,		EuroSign ] };
     
-    key <AC11>  { [apostrophe,   quotedbl ] };
-    key <TLDE>  { [     grave,    notsign ] };
+    key <AC11> { [ apostrophe,	quotedbl ] };
+    key <TLDE> { [ grave,	notsign ] };
     
-    key <BKSL>  { [numbersign, asciitilde ] };
-    key <LSGT>  { [ backslash,        bar,          bar,    brokenbar ] };
+    key <BKSL> { [ numbersign,	asciitilde ] };
+    key <LSGT> { [ backslash,	bar,		bar,	brokenbar ] };
     
     include "level3(ralt_switch_multikey)"
 };
@@ -230,35 +238,35 @@ partial alphanumeric_keys
 xkb_symbols "progsyms" {
     name[Group1]="3rd-level symbols for programmers";
     
-    key <AD01> { [     NoSymbol,     NoSymbol,            less,       NoSymbol ] };
-    key <AD02> { [     NoSymbol,     NoSymbol,       braceleft,       NoSymbol ] };
-    key <AD03> { [     NoSymbol,     NoSymbol,           slash,       NoSymbol ] };
-    key <AD04> { [     NoSymbol,     NoSymbol,             bar,       NoSymbol ] };
-    key <AD05> { [     NoSymbol,     NoSymbol,       backslash,       NoSymbol ] };
-    key <AD06> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AD07> { [     NoSymbol,     NoSymbol,       ampersand,       NoSymbol ] };
-    key <AD08> { [     NoSymbol,     NoSymbol,        asterisk,       NoSymbol ] };
-    key <AD09> { [     NoSymbol,     NoSymbol,      braceright,       NoSymbol ] };
-    key <AD10> { [     NoSymbol,     NoSymbol,         greater,       NoSymbol ] };
+    key <AD01> { [ NoSymbol,	NoSymbol,	less,		NoSymbol	] };
+    key <AD02> { [ NoSymbol,	NoSymbol,	braceleft,	NoSymbol	] };
+    key <AD03> { [ NoSymbol,	NoSymbol,	slash,		NoSymbol	] };
+    key <AD04> { [ NoSymbol,	NoSymbol,	bar,		NoSymbol	] };
+    key <AD05> { [ NoSymbol,	NoSymbol,	backslash,	NoSymbol	] };
+    key <AD06> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AD07> { [ NoSymbol,	NoSymbol,	ampersand,	NoSymbol	] };
+    key <AD08> { [ NoSymbol,	NoSymbol,	asterisk,	NoSymbol	] };
+    key <AD09> { [ NoSymbol,	NoSymbol,	braceright,	NoSymbol	] };
+    key <AD10> { [ NoSymbol,	NoSymbol,	greater,	NoSymbol	] };
     
-    key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       NoSymbol ] };
-    key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       NoSymbol ] };
-    key <AC03> { [     NoSymbol,     NoSymbol,           minus,       NoSymbol ] };
-    key <AC04> { [     NoSymbol,     NoSymbol,           equal,       NoSymbol ] };
-    key <AC05> { [     NoSymbol,     NoSymbol,      underscore,       NoSymbol ] };
-    key <AC06> { [     NoSymbol,     NoSymbol,           colon,       NoSymbol ] };
-    key <AC07> { [     NoSymbol,     NoSymbol,      asciitilde,       NoSymbol ] };
-    key <AC08> { [     NoSymbol,     NoSymbol,            plus,       NoSymbol ] };
-    key <AC09> { [     NoSymbol,     NoSymbol,      parenright,       NoSymbol ] };
-    key <AC10> { [     NoSymbol,     NoSymbol,    bracketright,       NoSymbol ] };
+    key <AC01> { [ NoSymbol,	NoSymbol,	bracketleft,	NoSymbol	] };
+    key <AC02> { [ NoSymbol,	NoSymbol,	parenleft,	NoSymbol	] };
+    key <AC03> { [ NoSymbol,	NoSymbol,	minus,		NoSymbol	] };
+    key <AC04> { [ NoSymbol,	NoSymbol,	equal,		NoSymbol	] };
+    key <AC05> { [ NoSymbol,	NoSymbol,	underscore,	NoSymbol	] };
+    key <AC06> { [ NoSymbol,	NoSymbol,	colon,		NoSymbol	] };
+    key <AC07> { [ NoSymbol,	NoSymbol,	asciitilde,	NoSymbol	] };
+    key <AC08> { [ NoSymbol,	NoSymbol,	plus,		NoSymbol	] };
+    key <AC09> { [ NoSymbol,	NoSymbol,	parenright,	NoSymbol	] };
+    key <AC10> { [ NoSymbol,	NoSymbol,	bracketright,	NoSymbol	] };
     
-    key <AB01> { [     NoSymbol,     NoSymbol,           grave,       NoSymbol ] };
-    key <AB02> { [     NoSymbol,     NoSymbol,      apostrophe,       NoSymbol ] };
-    key <AB03> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol ] };
-    key <AB04> { [     NoSymbol,     NoSymbol,          dollar,       NoSymbol ] };
-    key <AB07> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol ] };
-    key <AB08> { [     NoSymbol,     NoSymbol,        question,       NoSymbol ] };
-    key <AB09> { [     NoSymbol,     NoSymbol,        quotedbl,       NoSymbol ] };
+    key <AB01> { [ NoSymbol,	NoSymbol,	grave,		NoSymbol	] };
+    key <AB02> { [ NoSymbol,	NoSymbol,	apostrophe,	NoSymbol	] };
+    key <AB03> { [ NoSymbol,	NoSymbol,	exclam,		NoSymbol	] };
+    key <AB04> { [ NoSymbol,	NoSymbol,	dollar,		NoSymbol	] };
+    key <AB07> { [ NoSymbol,	NoSymbol,	numbersign,	NoSymbol	] };
+    key <AB08> { [ NoSymbol,	NoSymbol,	question,	NoSymbol	] };
+    key <AB09> { [ NoSymbol,	NoSymbol,	quotedbl,	NoSymbol	] };
 };
 
 // These have the right hand shifted one key right, in an attempt to make the
@@ -268,40 +276,40 @@ partial alphanumeric_keys
 xkb_symbols "progsyms_shift" {
     name[Group1]="3rd-level symbols for programmers shifted";
     
-    key <AD01> { [     NoSymbol,     NoSymbol,            less,       NoSymbol ] };
-    key <AD02> { [     NoSymbol,     NoSymbol,       braceleft,       NoSymbol ] };
-    key <AD03> { [     NoSymbol,     NoSymbol,           slash,       NoSymbol ] };
-    key <AD04> { [     NoSymbol,     NoSymbol,             bar,       NoSymbol ] };
-    key <AD05> { [     NoSymbol,     NoSymbol,       backslash,       NoSymbol ] };
-    key <AD06> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AD07> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AD08> { [     NoSymbol,     NoSymbol,       ampersand,       NoSymbol ] };
-    key <AD09> { [     NoSymbol,     NoSymbol,        asterisk,       NoSymbol ] };
-    key <AD10> { [     NoSymbol,     NoSymbol,      braceright,       NoSymbol ] };
-    key <AD11> { [     NoSymbol,     NoSymbol,         greater,       NoSymbol ] };
+    key <AD01> { [ NoSymbol,	NoSymbol,	less,		NoSymbol	] };
+    key <AD02> { [ NoSymbol,	NoSymbol,	braceleft,	NoSymbol	] };
+    key <AD03> { [ NoSymbol,	NoSymbol,	slash,		NoSymbol	] };
+    key <AD04> { [ NoSymbol,	NoSymbol,	bar,		NoSymbol	] };
+    key <AD05> { [ NoSymbol,	NoSymbol,	backslash,	NoSymbol	] };
+    key <AD06> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AD07> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AD08> { [ NoSymbol,	NoSymbol,	ampersand,	NoSymbol	] };
+    key <AD09> { [ NoSymbol,	NoSymbol,	asterisk,	NoSymbol	] };
+    key <AD10> { [ NoSymbol,	NoSymbol,	braceright,	NoSymbol	] };
+    key <AD11> { [ NoSymbol,	NoSymbol,	greater,	NoSymbol	] };
     
-    key <AC01> { [     NoSymbol,     NoSymbol,     bracketleft,       NoSymbol ] };
-    key <AC02> { [     NoSymbol,     NoSymbol,       parenleft,       NoSymbol ] };
-    key <AC03> { [     NoSymbol,     NoSymbol,           minus,       NoSymbol ] };
-    key <AC04> { [     NoSymbol,     NoSymbol,           equal,       NoSymbol ] };
-    key <AC05> { [     NoSymbol,     NoSymbol,      underscore,       NoSymbol ] };
-    key <AC06> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AC07> { [     NoSymbol,     NoSymbol,           colon,       NoSymbol ] };
-    key <AC08> { [     NoSymbol,     NoSymbol,      asciitilde,       NoSymbol ] };
-    key <AC09> { [     NoSymbol,     NoSymbol,            plus,       NoSymbol ] };
-    key <AC10> { [     NoSymbol,     NoSymbol,      parenright,       NoSymbol ] };
-    key <AC11> { [     NoSymbol,     NoSymbol,    bracketright,       NoSymbol ] };
+    key <AC01> { [ NoSymbol,	NoSymbol,	bracketleft,	NoSymbol	] };
+    key <AC02> { [ NoSymbol,	NoSymbol,	parenleft,	NoSymbol	] };
+    key <AC03> { [ NoSymbol,	NoSymbol,	minus,		NoSymbol	] };
+    key <AC04> { [ NoSymbol,	NoSymbol,	equal,		NoSymbol	] };
+    key <AC05> { [ NoSymbol,	NoSymbol,	underscore,	NoSymbol	] };
+    key <AC06> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AC07> { [ NoSymbol,	NoSymbol,	colon,		NoSymbol	] };
+    key <AC08> { [ NoSymbol,	NoSymbol,	asciitilde,	NoSymbol	] };
+    key <AC09> { [ NoSymbol,	NoSymbol,	plus,		NoSymbol	] };
+    key <AC10> { [ NoSymbol,	NoSymbol,	parenright,	NoSymbol	] };
+    key <AC11> { [ NoSymbol,	NoSymbol,	bracketright,	NoSymbol	] };
     
-    key <AB01> { [     NoSymbol,     NoSymbol,           grave,       NoSymbol ] };
-    key <AB02> { [     NoSymbol,     NoSymbol,      apostrophe,       NoSymbol ] };
-    key <AB03> { [     NoSymbol,     NoSymbol,          exclam,       NoSymbol ] };
-    key <AB04> { [     NoSymbol,     NoSymbol,          dollar,       NoSymbol ] };
-    key <AB05> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AB06> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AB07> { [     NoSymbol,     NoSymbol,        NoSymbol,       NoSymbol ] };
-    key <AB08> { [     NoSymbol,     NoSymbol,      numbersign,       NoSymbol ] };
-    key <AB09> { [     NoSymbol,     NoSymbol,        question,       NoSymbol ] };
-    key <AB10> { [     NoSymbol,     NoSymbol,        quotedbl,       NoSymbol ] };
+    key <AB01> { [ NoSymbol,	NoSymbol,	grave,		NoSymbol	] };
+    key <AB02> { [ NoSymbol,	NoSymbol,	apostrophe,	NoSymbol	] };
+    key <AB03> { [ NoSymbol,	NoSymbol,	exclam,		NoSymbol	] };
+    key <AB04> { [ NoSymbol,	NoSymbol,	dollar,		NoSymbol	] };
+    key <AB05> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AB06> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AB07> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
+    key <AB08> { [ NoSymbol,	NoSymbol,	numbersign,	NoSymbol	] };
+    key <AB09> { [ NoSymbol,	NoSymbol,	question,	NoSymbol	] };
+    key <AB10> { [ NoSymbol,	NoSymbol,	quotedbl,	NoSymbol	] };
 };
 
 
@@ -314,60 +322,60 @@ xkb_symbols "gbcolemak_shift" {
     name[Group1]="United Kingdom - Colemak shifted";
     
     // Alphanumeric section
-    key <TLDE> { [     grave,    notsign,          bar,          bar ] };
-    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
-    key <AE02> { [         2,         at,  twosuperior,    oneeighth ] };
-    key <AE03> { [         3,   sterling, threesuperior,    sterling ] };
-    key <AE04> { [         4,     dollar,     EuroSign,   onequarter ] };
-    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
-    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
-    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
-    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
-    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
-    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
-    key <AE11> { [        minus,   underscore,          endash,           emdash ] };
-    key <AE12> { [        equal,         plus,        multiply,         division ] };
+    key <TLDE> { [ grave,	notsign,	bar,		bar	] };
+    key <AE01> { [ 1,		exclam,		exclamdown,	onesuperior	] };
+    key <AE02> { [ 2,		at,		twosuperior,	oneeighth	] };
+    key <AE03> { [ 3,		sterling,	threesuperior,	sterling	] };
+    key <AE04> { [ 4,		dollar,		EuroSign,	onequarter	] };
+    key <AE05> { [ 5,		percent,	EuroSign,	yen	] };
+    key <AE06> { [ 6,		asciicircum,	hstroke,	Hstroke	] };
+    key <AE07> { [ 7,		ampersand,	eth,		ETH	] };
+    key <AE08> { [ 8,		asterisk,	thorn,		THORN	] };
+    key <AE09> { [ 9,		parenleft,	leftsinglequotemark,	leftdoublequotemark	] };
+    key <AE10> { [ 0,		parenright,	rightsinglequotemark,	rightdoublequotemark	] };
+    key <AE11> { [ minus,	underscore,	endash,		emdash	] };
+    key <AE12> { [ equal,	plus,		multiply,	division	] };
     
-    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
-    key <AD02> { [            w,            W,           aring,            Aring ] };
-    key <AD03> { [            f,            F,          atilde,           Atilde ] };
-    key <AD04> { [            p,            P,          oslash,         Ooblique ] };
-    key <AD05> { [            g,            G,     dead_ogonek,       asciitilde ] };
-    key <AD06> { [numbersign, asciitilde,   dead_grave,   dead_breve ] };
-    key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
-    key <AD08> { [            l,            L,         lstroke,          Lstroke ] };
-    key <AD09> { [            u,            U,          uacute,           Uacute ] };
-    key <AD10> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
-    key <AD11> { [    semicolon,        colon,      odiaeresis,       Odiaeresis ] };
-    key <AD12> { [        slash,     question,    questiondown,       asciitilde ] };
+    key <AD01> { [ q,		Q,		adiaeresis,	Adiaeresis	] };
+    key <AD02> { [ w,		W,		aring,		Aring	] };
+    key <AD03> { [ f,		F,		atilde,		Atilde	] };
+    key <AD04> { [ p,		P,		oslash,		Ooblique	] };
+    key <AD05> { [ g,		G,		dead_ogonek,	asciitilde	] };
+    key <AD06> { [ numbersign,	asciitilde,	dead_grave,	dead_breve	] };
+    key <AD07> { [ j,		J,		dstroke,	Dstroke	] };
+    key <AD08> { [ l,		L,		lstroke,	Lstroke	] };
+    key <AD09> { [ u,		U,		uacute,		Uacute	] };
+    key <AD10> { [ y,		Y,		udiaeresis,	Udiaeresis	] };
+    key <AD11> { [ semicolon,	colon,		odiaeresis,	Odiaeresis	] };
+    key <AD12> { [ slash,	question,	questiondown,	asciitilde	] };
     
-    key <AC01> { [            a,            A,          aacute,           Aacute ] };
-    key <AC02> { [            r,            R,      dead_grave,       asciitilde ] };
-    key <AC03> { [            s,            S,          ssharp,       asciitilde ] };
-    key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
-    key <AC05> { [            d,            D,  dead_diaeresis,       asciitilde ] };
-    key <AC06> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
-    key <AC07> { [            h,            H,      dead_caron,       asciitilde ] };
-    key <AC08> { [            n,            N,          ntilde,           Ntilde ] };
-    key <AC09> { [            e,            E,          eacute,           Eacute ] };
-    key <AC10> { [            i,            I,          iacute,           Iacute ] };
-    key <AC11> { [            o,            O,          oacute,           Oacute ] };
-    key <BKSL> { [apostrophe,   quotedbl, dead_circumflex, dead_caron] };
+    key <AC01> { [ a,		A,		aacute,		Aacute	] };
+    key <AC02> { [ r,		R,		dead_grave,	asciitilde	] };
+    key <AC03> { [ s,		S,		ssharp,		asciitilde	] };
+    key <AC04> { [ t,		T,		dead_acute,	dead_doubleacute	] };
+    key <AC05> { [ d,		D,		dead_diaeresis,	asciitilde	] };
+    key <AC06> { [ bracketleft,	braceleft,	guillemotleft,	0x1002039	] };
+    key <AC07> { [ h,		H,		dead_caron,	asciitilde	] };
+    key <AC08> { [ n,		N,		ntilde,		Ntilde	] };
+    key <AC09> { [ e,		E,		eacute,		Eacute	] };
+    key <AC10> { [ i,		I,		iacute,		Iacute	] };
+    key <AC11> { [ o,		O,		oacute,		Oacute	] };
+    key <BKSL> { [ apostrophe,	quotedbl,	dead_circumflex,dead_caron	] };
     
-    key <LSGT> { [ backslash,        bar,          bar,    brokenbar ] };
-    key <AB01> { [            z,            Z,              ae,               AE ] };
-    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
-    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
-    key <AB04> { [            v,            V,              oe,               OE ] };
-    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
-    key <AB06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
-    key <AB07> { [            k,            K,  dead_abovering,       asciitilde ] };
-    key <AB08> { [            m,            M,     dead_macron,       asciitilde ] };
-    key <AB09> { [        comma,         less,    dead_cedilla,       asciitilde ] };
-    key <AB10> { [       period,      greater,   dead_abovedot,       asciitilde ] };
+    key <LSGT> { [ backslash,	bar,		bar,		brokenbar	] };
+    key <AB01> { [ z,		Z,		ae,		AE	] };
+    key <AB02> { [ x,		X,		dead_circumflex,asciitilde	] };
+    key <AB03> { [ c,		C,		ccedilla,	Ccedilla	] };
+    key <AB04> { [ v,		V,		oe,		OE	] };
+    key <AB05> { [ b,		B,		dead_breve,	asciitilde	] };
+    key <AB06> { [ bracketright,braceright,	guillemotright,	0x100203a	] };
+    key <AB07> { [ k,		K,		dead_abovering,	asciitilde	] };
+    key <AB08> { [ m,		M,		dead_macron,	asciitilde	] };
+    key <AB09> { [ comma,	less,		dead_cedilla,	asciitilde	] };
+    key <AB10> { [ period,	greater,	dead_abovedot,	asciitilde	] };
     
-    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
-    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+    key <CAPS> { [ BackSpace,	BackSpace,	BackSpace,	BackSpace	] };
+    key <SPCE> { [ space,	space,		space,		nobreakspace	] };
     
     include "level3(ralt_switch)"
 };
@@ -377,7 +385,7 @@ xkb_symbols "colemak_shift" {
     include "cyborg16(progsyms_shift)"
     name[Group1]="United Kingdom - Colemak and progsyms shifted";
     
-    key <BKSL> { [apostrophe,   quotedbl, dead_circumflex, dead_caron] };
+    key <BKSL> { [ apostrophe,	quotedbl,	dead_circumflex,	dead_caron	] };
     
     include "level3(ralt_switch_multikey)"
 };
