@@ -132,7 +132,7 @@ xkb_symbols "colemak_ds" {
     key <AE11> { [ aring,	Aring,		agrave,		Agrave] };
     key <AE12> { [ udiaeresis,	Udiaeresis,	NoSymbol,	NoSymbol] };
     
-    key <AD01> { [ adiaeresis,	Adiaeresis,	aring,		Aring	] };
+    key <AD01> { [ adiaeresis,	Adiaeresis,	NoSymbol,	NoSymbol] };
     key <AD06> { [ underscore,	minus,		NoSymbol,	NoSymbol] };
     key <AD10> { [ odiaeresis,	Odiaeresis,	NoSymbol,	ssharp	] };
     key <AD11> { [ j,		J,		eacute,		Eacute	] };
