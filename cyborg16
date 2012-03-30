@@ -10,9 +10,11 @@
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 // International plus programming keys (higher emphasis on progamming) The
-// brackets and common operators, and more useful dead keys, are on the third
-// level. Keys based on thinkpad keyboard (with colemak+ch layout);
-// "first", third and forth levels:
+// brackets, common operators and a few other things are on the third level
+// (Alt+key), with Greek on the fourth (Shift+Alt+key).
+
+// Note: this is the colemak_ds variant. You can use the third/fourth level with
+// qwerty (default), dvorak, etc. too!
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
 // │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ % ≤ │ ^ ≥ │ & ÷ │ * × │ ( ∉ │ ) ∌ │ Å À │ Ü ± ┃ ⌫ Back-  ┃

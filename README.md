@@ -1,6 +1,11 @@
 DHardy's keyboard layouts
 =================
 
+There are two parts here: a Colemak advertisement and shortcuts for entering
+various symbols easily (things like `{`, `≤`, `∈`, `ç`). Skip down a bit if
+you're only interested in the latter!
+
+
 Colemak
 -----------
 
@@ -124,6 +129,22 @@ probably asking is *is it worth me learning?* Of course, I cannot answer that
 for you, but I can tell you I find this layout a *massive* improvement over
 standard qwerty or colemak, not just for programming but also for writing plain
 text.
+
+
+Symbols via sequences (compose)
+-----------------------------
+
+Symbols can also be entered using sequences: `compose` + `-` + `>` maps to `→`,
+for example. Many of these are available by default on linux; I've added a few
+more combinations like `compose` + `f` + `a` producing `∀`.
+
+If you're wondering what compose is or how to enable it, see
+[https://help.ubuntu.com/community/ComposeKey][] (or just add
+`compose:menu` to your XKB options).
+
+To use my extensions, copy or link the file `XCompose` to `$HOME/.XCompose` and
+restart applications. (For GTK applications I think some additional hack is
+necessary.)
 
 
 Installation on linux

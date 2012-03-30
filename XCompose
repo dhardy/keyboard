@@ -1,0 +1,15 @@
+# This is an extension to the keyboard layout — for many less commonly used
+# symbols, putting them somewhere on the keyboard layout wastes space and the
+# location isn't always easy to remember.
+
+# Copy/link this file to ~/.XCompose
+# (And I think some kind of workaround is necessary for GTK/Gnome apps.)
+
+include "%S/en_US.UTF-8/Compose"
+
+<Multi_key> <f> <a>               : "∀" U2200 # for all
+<Multi_key> <e> <x>               : "∃" U2203 # there exists
+<Multi_key> <t> <e>               : "∃" U2203 # there exists
+<Multi_key> <n> <e>              : "∄" U2204 # there does not exist
+<Multi_key> <l> <a>               : "∧" U2227 # logical and
+<Multi_key> <l> <o>               : "∨" U2228 # logical or
