@@ -139,7 +139,7 @@ for example. Many of these are available by default on linux; I've added a few
 more combinations like `compose` + `f` + `a` producing `∀`.
 
 If you're wondering what compose is or how to enable it, see
-[https://help.ubuntu.com/community/ComposeKey][] (or just add
+[https://help.ubuntu.com/community/ComposeKey]() (or just add
 `compose:menu` to your XKB options).
 
 To use my extensions, copy or link the file `XCompose` to `$HOME/.XCompose` and
