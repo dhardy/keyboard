@@ -9,44 +9,45 @@
 //  ┃Fn ┊Ctrl┊Wn┊Alt┊ Space              ┊Alt┊Mnu┊Ctl┊  Arrows  ┃
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-// International plus programming keys (higher emphasis on progamming) The
-// brackets, common operators and a few other things are on the third level
-// (Alt+key), with Greek on the fourth (Shift+Alt+key).
+// Base keyboard layout can be qwerty, colemak or whatever. Mostly this is
+// unimportant, though the fourth-layer greek letters are layed out to match
+// colemak_ds.
 
-// Note: this is the colemak_ds variant. You can use the third/fourth level with
-// qwerty (default), dvorak, etc. too!
+// For the third level, the "prog*" layouts add a lot of operators, brackets,
+// etc.
+
+// For the fourth level, lower-case Greek letters can be added.
+
+// My personal keyboard looks like this (colemak_ds):
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ % ≤ │ ^ ≥ │ & ÷ │ * × │ ( ∉ │ ) ∌ │ Å À │ Ü ± ┃ ⌫ Back-  ┃
-// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ¯ū│ 8 · │ 9 ∈ │ 0 ∋ │ å à │ ü ≡ ┃   space  ┃
+// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ %   │ ^   │ &   │ * · │ ( ∉ │ ) ∌ │ _ Å │ + ± ┃ ⌫ Back-  ┃
+// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ÷ │ 8 × │ 9 ∈ │ 0 ∋ │ - å │ = ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Ä ≤ │ W ß │ F φ │ P π │ G γ │ - ξ │ L λ │ U θ │ Y υ │ Ö ≥ │ J É │ Q ̨È ┃ |     ┃
-// ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ g % │ _ ^ │ l & │ u * │ y } │ ö > │ j é │ q è ┃ \ #   ┃
+// ┃        ┃ Ä ≤ │ W ß │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ Y υ │ Ö ≥ │ J É │ Q ̨È ┃ |     ┃
+// ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ g % │ ü ^ │ l & │ u * │ y } │ ö > │ j é │ q è ┃ \ #   ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ "   ┃           ┃
-// ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ '   ┃ ⏎ Enter   ┃
+// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ ' À ┃           ┃
+// ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ _ à ┃ ⏎ Enter   ┃
 // ┣━━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━┫
 // ┃             ┃ Z ζ │ X χ │ C ψ │ V ω │ B β │ K κ │ M μ │ _ « │ — » │ ? ¿ ┃              ┃
-// ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b \ │ k 1 │ m 0 │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
+// ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b 0 │ k 1 │ m 2 │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
 // ┣━━━━━┳━━━━━━━╋━━━━┳┷━━━━┱┴─────┴─────┴─────┴─────┴─────╆━━━━━╈━━━━━╈━━━━━╋━━━━┯━━━━┯━━━━┩
 // ┃     ┃       ┃    ┃     ┃ ␣        Unbreakable space ⍽ ┃    ⇮┃     ┃     ┃PgBk│↑   │PgFd│
 // ┃Fn   ┃Ctrl   ┃Meta┃Alt  ┃ ␣ Space                    ␣ ┃AltGr┃Menu ┃Ctrl ┠────┼────┼────┤
 // ┗━━━━━┻━━━━━━━┻━━━━┻━━━━━┹──────────────────────────────┺━━━━━┻━━━━━┻━━━━━┩←   │↓   │→   │
 //                                                                           └────┴────┴────┘
 
-// Order of significance (OpenMalaria/C++):
-// : *()/_; @-<>&{}0=" #+35![]'%\|~
-// In many things (mostly C++ and text):
-// 10 : )( /*-; "+={}>< & @# \!' [] |`%?
 
-// Keys which could be put to better uses:
-// alt:		b OR d 7 '
-// alt+shift:	w ö 5 6 ü
-// displaced: Ç dead-circumflex
-// some greek capitals: gamma, delta, sigma and pi are used at times.
+// ————————————————————————————————————————————————————————————————————————————
+//  LEVEL 3 — PROGRAMMING SYMBOLS
+// ————————————————————————————————————————————————————————————————————————————
 
+// Lots of useful operators and other non-letter glyphs
+// Layout is as in the third layer of the graphic above, except for a few
+// symbols in the fourth layer (overriden above).
 partial alphanumeric_keys
-xkb_symbols "prog_intl" {
+xkb_symbols "progsyms3" {
     name[Group1]="3rd-level symbols for programmers";
     
     key <TLDE> { [ NoSymbol,	NoSymbol,	notsign,	0x10022A6	] }; // ¬ ⊦
@@ -56,8 +57,8 @@ xkb_symbols "prog_intl" {
     key <AE04> { [ NoSymbol,	NoSymbol,	EuroSign,	cent		] }; // € ¢
     key <AE05> { [ NoSymbol,	NoSymbol,	currency,	0x1002264	] }; // ¤ ≤
     key <AE06> { [ NoSymbol,	NoSymbol,	dead_circumflex,0x1002265	] }; // û ≥
-    key <AE07> { [ NoSymbol,	NoSymbol,	dead_macron,	division	] }; // ū ÷
-    key <AE08> { [ NoSymbol,	NoSymbol,	periodcentered,	multiply	] }; // · ×
+    key <AE07> { [ NoSymbol,	NoSymbol,	division,	NoSymbol	] }; // ÷
+    key <AE08> { [ NoSymbol,	NoSymbol,	multiply,	periodcentered	] }; // × ·
     key <AE09> { [ NoSymbol,	NoSymbol,	0x1002208,	0x1002209	] }; // ∈ ∉
     key <AE10> { [ NoSymbol,	NoSymbol,	0x100220B,	0x100220C	] }; // ∋ ∌
     key <AE11> { [ NoSymbol,	NoSymbol,	0x1002212,	0x1002014	] }; // − — (minus, m-dash)
@@ -65,36 +66,36 @@ xkb_symbols "prog_intl" {
     
     key <AD01> { [ NoSymbol,	NoSymbol,	less,		0x1002264	] }; // < ≤
     key <AD02> { [ NoSymbol,	NoSymbol,	braceleft,	NoSymbol	] }; // {
-    key <AD03> { [ NoSymbol,	NoSymbol,	slash,		Greek_phi	] }; // / φ
-    key <AD04> { [ NoSymbol,	NoSymbol,	bar,		Greek_pi	] }; // | π
-    key <AD05> { [ NoSymbol,	NoSymbol,	percent,	Greek_gamma	] }; // % γ
-    key <AD06> { [ NoSymbol,	NoSymbol,	asciicircum,	Greek_xi	] }; // ^ ξ
-    key <AD07> { [ NoSymbol,	NoSymbol,	ampersand,	Greek_lambda	] }; // & λ
-    key <AD08> { [ NoSymbol,	NoSymbol,	asterisk,	Greek_theta	] }; // * θ
-    key <AD09> { [ NoSymbol,	NoSymbol,	braceright,	Greek_upsilon	] }; // } υ
+    key <AD03> { [ NoSymbol,	NoSymbol,	slash,		division	] }; // / ÷
+    key <AD04> { [ NoSymbol,	NoSymbol,	bar,		NoSymbol	] }; // |
+    key <AD05> { [ NoSymbol,	NoSymbol,	percent,	NoSymbol	] }; // %
+    key <AD06> { [ NoSymbol,	NoSymbol,	asciicircum,	dead_circumflex	] }; // ^ û
+    key <AD07> { [ NoSymbol,	NoSymbol,	ampersand,	NoSymbol	] }; // &
+    key <AD08> { [ NoSymbol,	NoSymbol,	asterisk,	NoSymbol	] }; // *
+    key <AD09> { [ NoSymbol,	NoSymbol,	braceright,	NoSymbol	] }; // }
     key <AD10> { [ NoSymbol,	NoSymbol,	greater,	0x1002265	] }; // > ≥
     key <AD11> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
     key <AD12> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] };
     key <BKSL> { [ backslash,	bar,		numbersign,	brokenbar	] };
     
-    key <AC01> { [ NoSymbol,	NoSymbol,	bracketleft,	Greek_alpha	] }; // [ α
-    key <AC02> { [ NoSymbol,	NoSymbol,	parenleft,	Greek_rho	] }; // ( ρ
-    key <AC03> { [ NoSymbol,	NoSymbol,	minus,		Greek_sigma	] }; // - σ
-    key <AC04> { [ NoSymbol,	NoSymbol,	exclam,		Greek_tau	] }; // ! τ
-    key <AC05> { [ NoSymbol,	NoSymbol,	backslash,	Greek_delta	] }; // \ δ
-    key <AC06> { [ NoSymbol,	NoSymbol,	0x1002260,	Greek_eta	] }; // ≠ η
-    key <AC07> { [ NoSymbol,	NoSymbol,	equal,		Greek_nu	] }; // = ν
-    key <AC08> { [ NoSymbol,	NoSymbol,	plus,		Greek_epsilon	] }; // + ε
-    key <AC09> { [ NoSymbol,	NoSymbol,	parenright,	Greek_iota	] }; // ) ι
-    key <AC10> { [ NoSymbol,	NoSymbol,	bracketright,	Greek_omicron	] }; // ] ο
+    key <AC01> { [ NoSymbol,	NoSymbol,	bracketleft,	NoSymbol	] }; // [
+    key <AC02> { [ NoSymbol,	NoSymbol,	parenleft,	NoSymbol	] }; // (
+    key <AC03> { [ NoSymbol,	NoSymbol,	minus,		0x1002212	] }; // - −
+    key <AC04> { [ NoSymbol,	NoSymbol,	exclam,		NoSymbol	] }; // !
+    key <AC05> { [ NoSymbol,	NoSymbol,	backslash,	NoSymbol	] }; // \
+    key <AC06> { [ NoSymbol,	NoSymbol,	0x1002260,	NoSymbol	] }; // ≠
+    key <AC07> { [ NoSymbol,	NoSymbol,	equal,		NoSymbol	] }; // = ≠
+    key <AC08> { [ NoSymbol,	NoSymbol,	plus,		NoSymbol	] }; // +
+    key <AC09> { [ NoSymbol,	NoSymbol,	parenright,	NoSymbol	] }; // )
+    key <AC10> { [ NoSymbol,	NoSymbol,	bracketright,	NoSymbol	] }; // ]
     
-    key <AB01> { [ NoSymbol,	NoSymbol,	grave,		Greek_zeta	] }; // ` ζ
-    key <AB02> { [ NoSymbol,	NoSymbol,	quotedbl,	Greek_chi	] }; // " χ
-    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_psi	] }; //   ψ
-    key <AB04> { [ NoSymbol,	NoSymbol,	dollar,		Greek_omega	] }; // $ ω
-    key <AB05> { [ NoSymbol,	NoSymbol,	backslash,	Greek_beta	] }; // \ β
-    key <AB06> { [ NoSymbol,	NoSymbol,	1,		Greek_kappa	] }; // 1 κ
-    key <AB07> { [ NoSymbol,	NoSymbol,	0,		Greek_mu	] }; // 0 μ
+    key <AB01> { [ NoSymbol,	NoSymbol,	grave,		NoSymbol	] }; // `
+    key <AB02> { [ NoSymbol,	NoSymbol,	quotedbl,	NoSymbol	] }; // "
+    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	NoSymbol	] }; //  
+    key <AB04> { [ NoSymbol,	NoSymbol,	dollar,		NoSymbol	] }; // $
+    key <AB05> { [ NoSymbol,	NoSymbol,	0,		NoSymbol	] }; // 0
+    key <AB06> { [ NoSymbol,	NoSymbol,	1,		NoSymbol	] }; // 1
+    key <AB07> { [ NoSymbol,	NoSymbol,	2,		NoSymbol	] }; // 2
     key <AB08> { [ NoSymbol,	underscore,	semicolon,	guillemotleft	] }; // _ ; «
     key <AB09> { [ NoSymbol,	0x1002014,	colon,		guillemotright	] }; // — : »
     key <AB10> { [ NoSymbol,	NoSymbol,	numbersign,	questiondown	] }; // # ¿
@@ -113,13 +114,57 @@ xkb_symbols "prog_ops" {
 };
 
 
-// All the following were stolen from gb, with at and quotedbl swapped.
+// Greek for fourth level
+// Layout is based on Colemak letter positions
+
+// . ß φ π γ ξ λ θ υ . . .
+// α ρ σ τ δ η ν ε ι ο .
+//  ζ χ ψ ω β κ μ . . .
+
+partial alphanumeric_keys
+xkb_symbols "l4_greek" {
+    name[Group1]="4th-level Greek";
+    
+    key <AD03> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_phi	] }; // φ
+    key <AD04> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_pi	] }; // π
+    key <AD05> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_gamma	] }; // γ
+    key <AD06> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_xi	] }; // ξ
+    key <AD07> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_lambda	] }; // λ
+    key <AD08> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_theta	] }; // θ
+    key <AD09> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_upsilon	] }; // υ
+    
+    key <AC01> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_alpha	] }; // α
+    key <AC02> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_rho	] }; // ρ
+    key <AC03> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_sigma	] }; // σ
+    key <AC04> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_tau	] }; // τ
+    key <AC05> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_delta	] }; // δ
+    key <AC06> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_eta	] }; // η
+    key <AC07> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_nu	] }; // ν
+    key <AC08> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_epsilon	] }; // ε
+    key <AC09> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_iota	] }; // ι
+    key <AC10> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_omicron	] }; // ο
+    
+    key <AB01> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_zeta	] }; // ζ
+    key <AB02> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_chi	] }; // χ
+    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_psi	] }; // ψ
+    key <AB04> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_omega	] }; // ω
+    key <AB05> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_beta	] }; // β
+    key <AB06> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_kappa	] }; // κ
+    key <AB07> { [ NoSymbol,	NoSymbol,	NoSymbol,	Greek_mu	] }; // μ
+};
+
+
+// ————————————————————————————————————————————————————————————————————————————
+//  FINAL VARIANTS — (layout variants you can pick)
+// ————————————————————————————————————————————————————————————————————————————
+
 
 partial alphanumeric_keys
 xkb_symbols "colemak" {
     include "us(colemak)"
-    include "cyborg16(prog_intl)"
-    name[Group1]="US keyboard, colemak and progsyms";
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, colemak, progsyms and greek";
     
     key <CAPS> { [ BackSpace,	BackSpace,	BackSpace,	BackSpace	] };
     
@@ -129,19 +174,18 @@ xkb_symbols "colemak" {
 partial alphanumeric_keys
 xkb_symbols "colemak_ds" {
     include "cyborg16(colemak)"
-    name[Group1]="US keyboard with ä, ö, ü, å and progsyms";
+    name[Group1]="US keyboard with ä, ö, ü, å, progsyms and greek";
     
-    key <AE11> { [ aring,	Aring,		agrave,		Agrave] };
-    key <AE12> { [ udiaeresis,	Udiaeresis,	NoSymbol,	NoSymbol] };
+    key <AE11> { [ NoSymbol,	NoSymbol,	aring,		Aring	] };
     
     key <AD01> { [ adiaeresis,	Adiaeresis,	NoSymbol,	NoSymbol] };
     key <AD02> { [ NoSymbol,	NoSymbol,	NoSymbol,	ssharp] };
-    key <AD06> { [ underscore,	minus,		NoSymbol,	NoSymbol] };
+    key <AD06> { [ udiaeresis,	Udiaeresis,	NoSymbol,	NoSymbol] };
     key <AD10> { [ odiaeresis,	Odiaeresis,	NoSymbol,	NoSymbol] };
     key <AD11> { [ j,		J,		eacute,		Eacute	] };
     key <AD12> { [ q,		Q,		egrave,		Egrave	] };
     
-    key <AC11> { [ apostrophe,	quotedbl,	agrave,		Agrave	] };
+    key <AC11> { [ underscore,	apostrophe,	agrave,		Agrave	] };
     
     key <AB03> { [ NoSymbol,	NoSymbol,	ccedilla,	NoSymbol] }; // Ccedilla overrides psi
 };
@@ -182,9 +226,10 @@ xkb_symbols "colemak_ukch" {
 partial alphanumeric_keys
 xkb_symbols "dvorak_uk" {
     include "us(dvorak)"
-    include "cyborg16(prog_intl)"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
     
-    name[Group1]="United Kingdom - Dvorak and progsyms";
+    name[Group1]="UK keyboard, Dvorak, progsyms and greek";
     
     key <AE02> { [ 2,		at	] };
     key <AE03> { [ 3,		sterling] };
@@ -203,9 +248,9 @@ xkb_symbols "dvorak_uk" {
 partial default alphanumeric_keys
 xkb_symbols "basic" {
     include "latin"
-    include "cyborg16(prog_intl)"
-    
-    name[Group1]="United States - with progsyms";
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, qwerty, progsyms and greek";
     
     include "level3(ralt_switch_multikey)"
 };
@@ -213,9 +258,9 @@ xkb_symbols "basic" {
 partial default alphanumeric_keys
 xkb_symbols "basic_uk" {
     include "latin"
-    include "cyborg16(prog_intl)"
-    
-    name[Group1]="United Kingdom - with progsyms";
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="UK keyboard, qwerty, progsyms and greek";
     
     key <AE02> { [ 2,		at ] };
     key <AE03> { [ 3,		sterling ] };
@@ -230,6 +275,10 @@ xkb_symbols "basic_uk" {
     include "level3(ralt_switch_multikey)"
 };
 
+
+// ————————————————————————————————————————————————————————————————————————————
+//  OLD STUFF
+// ————————————————————————————————————————————————————————————————————————————
 
 // Older version of above (not quite the same; no international keys).
 // Adds third-level symbols:    // Alternative (not implemented):
