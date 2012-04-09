@@ -27,8 +27,8 @@
 // ┃        ┃ Ä ≤ │ W ß │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ Y υ │ Ö ≥ │ J É │ Q ̨È ┃ |     ┃
 // ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ g % │ ü ^ │ l & │ u * │ y } │ ö > │ j é │ q è ┃ \ #   ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
-// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ ' À ┃           ┃
-// ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ _ à ┃ ⏎ Enter   ┃
+// ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ _ À ┃           ┃
+// ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ ' à ┃ ⏎ Enter   ┃
 // ┣━━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━┫
 // ┃             ┃ Z ζ │ X χ │ C ψ │ V ω │ B β │ K κ │ M μ │ _ « │ — » │ ? ¿ ┃              ┃
 // ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b 0 │ k 1 │ m 2 │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
@@ -185,7 +185,7 @@ xkb_symbols "colemak_ds" {
     key <AD11> { [ j,		J,		eacute,		Eacute	] };
     key <AD12> { [ q,		Q,		egrave,		Egrave	] };
     
-    key <AC11> { [ underscore,	apostrophe,	agrave,		Agrave	] };
+    key <AC11> { [ apostrophe,	underscore,	agrave,		Agrave	] };
     
     key <AB03> { [ NoSymbol,	NoSymbol,	ccedilla,	NoSymbol] }; // Ccedilla overrides psi
 };
