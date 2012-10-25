@@ -21,8 +21,8 @@
 // My personal keyboard looks like this (colemak_ds):
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ %   │ ^   │ &   │ * · │ ( ∉ │ ) ∌ │ _ Å │ + ± ┃ ⌫ Back-  ┃
-// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ÷ │ 8 × │ 9 ∈ │ 0 ∋ │ - å │ = ≡ ┃   space  ┃
+// │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ %   │ ^   │ &   │ * · │ ( ∉ │ ) ∌ │ _ — │ + ± ┃ ⌫ Back-  ┃
+// │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ÷ │ 8 × │ 9 ∈ │ 0 ∋ │ - − │ = ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
 // ┃        ┃ Ä ≤ │ W ß │ F φ │ P π │ G γ │ Ü ξ │ L λ │ U θ │ Y υ │ Ö ≥ │ J É │ Q ̨È ┃ |     ┃
 // ┃ Tab ↹  ┃ ä < │ w { │ f / │ p | │ g % │ ü ^ │ l & │ u * │ y } │ ö > │ j é │ q è ┃ \ #   ┃
@@ -30,7 +30,7 @@
 // ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ _ À ┃           ┃
 // ┃ space    ┃ a [ │ r ( │ s - │ t ! │ d \ │ h ≠ │ n = │ e + │ i ) │ o ] │ ' à ┃ ⏎ Enter   ┃
 // ┣━━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━┫
-// ┃             ┃ Z ζ │ X χ │ C ψ │ V ω │ B β │ K κ │ M μ │ _ « │ — » │ ? ¿ ┃              ┃
+// ┃             ┃ Z ζ │ X χ │ C ψ │ V ω │ B β │ K κ │ M μ │ − « │ — » │ ? ¿ ┃              ┃
 // ┃Shift ⇧      ┃ z ` │ x " │ c ç │ v $ │ b 0 │ k 1 │ m 2 │ , ; │ . : │ / # ┃ ⇧ Shift      ┃
 // ┣━━━━━┳━━━━━━━╋━━━━┳┷━━━━┱┴─────┴─────┴─────┴─────┴─────╆━━━━━╈━━━━━╈━━━━━╋━━━━┯━━━━┯━━━━┩
 // ┃     ┃       ┃    ┃     ┃ ␣        Unbreakable space ⍽ ┃    ⇮┃     ┃     ┃PgBk│↑   │PgFd│
@@ -96,7 +96,7 @@ xkb_symbols "progsyms3" {
     key <AB05> { [ NoSymbol,	NoSymbol,	0,		NoSymbol	] }; // 0
     key <AB06> { [ NoSymbol,	NoSymbol,	1,		NoSymbol	] }; // 1
     key <AB07> { [ NoSymbol,	NoSymbol,	2,		NoSymbol	] }; // 2
-    key <AB08> { [ NoSymbol,	underscore,	semicolon,	guillemotleft	] }; // _ ; «
+    key <AB08> { [ NoSymbol,	0x1002212,	semicolon,	guillemotleft	] }; // − ; «
     key <AB09> { [ NoSymbol,	0x1002014,	colon,		guillemotright	] }; // — : »
     key <AB10> { [ NoSymbol,	NoSymbol,	numbersign,	questiondown	] }; // # ¿
 };
@@ -173,36 +173,27 @@ xkb_symbols "colemak" {
 
 partial alphanumeric_keys
 xkb_symbols "colemak_ds" {
-    include "cyborg16(colemak)"
-    name[Group1]="US keyboard with ä, ö, ü, å, progsyms and greek";
+    include "cyborg16(colemak_ch)"
+    name[Group1]="US colemak with ä, ö, ü, å, progsyms and greek";
     
     key <AE11> { [ NoSymbol,	NoSymbol,	aring,		Aring	] };
-    
-    key <AD01> { [ adiaeresis,	Adiaeresis,	NoSymbol,	NoSymbol] };
-    key <AD02> { [ NoSymbol,	NoSymbol,	NoSymbol,	ssharp] };
-    key <AD06> { [ udiaeresis,	Udiaeresis,	NoSymbol,	NoSymbol] };
-    key <AD10> { [ odiaeresis,	Odiaeresis,	NoSymbol,	NoSymbol] };
-    key <AD11> { [ j,		J,		eacute,		Eacute	] };
-    key <AD12> { [ q,		Q,		egrave,		Egrave	] };
-    
-    key <AC11> { [ apostrophe,	underscore,	agrave,		Agrave	] };
-    
-    key <AB03> { [ NoSymbol,	NoSymbol,	ccedilla,	NoSymbol] }; // Ccedilla overrides psi
 };
 
 partial alphanumeric_keys
 xkb_symbols "colemak_ch" {
     include "cyborg16(colemak)"
-    name[Group1]="US keyboard, colemak, Swiss-inspired accented keys, and progsyms";
+    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
     
-    key <AD02> { [ NoSymbol,	NoSymbol,	NoSymbol,	ssharp] };
-    key <AD10> { [ apostrophe,	quotedbl,	NoSymbol,	NoSymbol] };
-    key <AD11> { [ odiaeresis,	Odiaeresis,	eacute,		Eacute	] };
-    key <AD12> { [ udiaeresis,	Udiaeresis,	egrave,		Egrave	] };
+    key <AD01> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD02> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp] };
+    key <AD06> { [ udiaeresis,  Udiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD10> { [ odiaeresis,  Odiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD11> { [ j,           J,              eacute,         Eacute  ] };
+    key <AD12> { [ q,           Q,              egrave,         Egrave  ] };
     
-    key <AC11> { [ adiaeresis,	Adiaeresis,	agrave,		Agrave	] };
+    key <AC11> { [ apostrophe,  underscore,     agrave,         Agrave  ] };
     
-    key <AB03> { [ NoSymbol,	NoSymbol,	NoSymbol,	ccedilla] };
+    key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
 };
 
 partial alphanumeric_keys
