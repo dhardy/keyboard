@@ -1,0 +1,39 @@
+    <layout>
+      <configItem>
+        <name>cyborg16</name>
+        <shortDescription>cyborg16</shortDescription>
+        <description>Diggory's layouts</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+          <iso639Id>ger</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>US colemak</description>
+          </configItem>
+        </variant>
+        <variant>
+          <name>colemak_ds</name>
+          <description>US colemak with ä, ö, ü, å</description>
+        </variant>
+        <variant>
+          <name>colemak_ch</name>
+          <description>US colemak with ä, ö, ü</description>
+        </variant>
+        <variant>
+          <name>colemak_ukch</name>
+          <description>UK colemak, with ä, ö, ü</description>
+        </variant>
+        <variant>
+          <name>dvorak_uk</name>
+          <description>UK Dvorak</description>
+        </variant>
+        <variant>
+          <name>basic_uk</name>
+          <description>UK qwerty</description>
+        </variant>
+      </variantList>
+    </layout>

@@ -18,7 +18,7 @@
 
 // For the fourth level, lower-case Greek letters can be added.
 
-// My personal keyboard looks like this (colemak_ds):
+// My personal keyboard looks like this (colemak_ch):
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
 // │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ %   │ ^   │ &   │ * · │ ( ∉ │ ) ∌ │ _ — │ + ± ┃ ⌫ Back-  ┃
@@ -37,6 +37,118 @@
 // ┃Fn   ┃Ctrl   ┃Meta┃Alt  ┃ ␣ Space                    ␣ ┃AltGr┃Menu ┃Ctrl ┠────┼────┼────┤
 // ┗━━━━━┻━━━━━━━┻━━━━┻━━━━━┹──────────────────────────────┺━━━━━┻━━━━━┻━━━━━┩←   │↓   │→   │
 //                                                                           └────┴────┴────┘
+
+
+// ————————————————————————————————————————————————————————————————————————————
+//  FINAL VARIANTS — (layout variants you can pick)
+// ————————————————————————————————————————————————————————————————————————————
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+    include "latin"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, qwerty, progsyms and greek";
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "basic_uk" {
+    include "latin"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="UK keyboard, qwerty, progsyms and greek";
+    
+    key <AE02> { [ 2,           at ] };
+    key <AE03> { [ 3,           sterling ] };
+    key <AE04> { [ 4,           dollar,         EuroSign ] };
+    
+    key <AC11> { [ apostrophe,  quotedbl ] };
+    key <TLDE> { [ grave,       notsign ] };
+    
+    key <BKSL> { [ numbersign,  asciitilde ] };
+    key <LSGT> { [ backslash,   bar,            bar,    brokenbar ] };
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak" {
+    include "us(colemak)"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, colemak, progsyms and greek";
+    
+    key <CAPS> { [ BackSpace,   BackSpace,      BackSpace,      BackSpace       ] };
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak_ds" {
+    include "cyborg16(colemak_ch)"
+    name[Group1]="US colemak with ä, ö, ü, å, progsyms and greek";
+    
+    key <AE11> { [ NoSymbol,    NoSymbol,       aring,          Aring   ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak_ch" {
+    include "cyborg16(colemak)"
+    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
+    
+    key <AD01> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD02> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp] };
+    key <AD06> { [ udiaeresis,  Udiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD10> { [ odiaeresis,  Odiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD11> { [ j,           J,              eacute,         Eacute  ] };
+    key <AD12> { [ q,           Q,              egrave,         Egrave  ] };
+    
+    key <AC11> { [ apostrophe,  underscore,     agrave,         Agrave  ] };
+    
+    key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak_ukch" {
+    include "cyborg16(colemak_ch)"
+    name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
+    
+    key <AE02> { [ 2,           at      ] };
+    key <AE03> { [ 3,           sterling] };
+    key <AE04> { [ 4,           dollar,         EuroSign] };
+    
+  //key <AC11> { [ apostrophe,  quotedbl] };
+    key <TLDE> { [ grave,       notsign ] };
+    
+    key <BKSL> { [ numbersign,  asciitilde ] };
+    key <LSGT> { [ backslash,   bar,            bar,    brokenbar] };
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "dvorak_uk" {
+    include "us(dvorak)"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    
+    name[Group1]="UK keyboard, Dvorak, progsyms and greek";
+    
+    key <AE02> { [ 2,           at      ] };
+    key <AE03> { [ 3,           sterling] };
+    key <AE04> { [ 4,           dollar,         EuroSign] };
+    
+    key <AD01> { [ apostrophe,  quotedbl] };
+    
+    key <TLDE> { [ grave,       notsign ] };
+    
+    key <BKSL> { [ numbersign,  asciitilde      ] };
+    key <LSGT> { [ backslash,   bar,            bar,    brokenbar       ] };
+    
+    include "level3(ralt_switch_multikey)"
+};
 
 
 // ————————————————————————————————————————————————————————————————————————————
@@ -155,119 +267,6 @@ xkb_symbols "l4_greek" {
 
 
 // ————————————————————————————————————————————————————————————————————————————
-//  FINAL VARIANTS — (layout variants you can pick)
-// ————————————————————————————————————————————————————————————————————————————
-
-
-partial alphanumeric_keys
-xkb_symbols "colemak" {
-    include "us(colemak)"
-    include "cyborg16(progsyms3)"
-    include "cyborg16(l4_greek)"
-    name[Group1]="US keyboard, colemak, progsyms and greek";
-    
-    key <CAPS> { [ BackSpace,	BackSpace,	BackSpace,	BackSpace	] };
-    
-    include "level3(ralt_switch_multikey)"
-};
-
-partial alphanumeric_keys
-xkb_symbols "colemak_ds" {
-    include "cyborg16(colemak_ch)"
-    name[Group1]="US colemak with ä, ö, ü, å, progsyms and greek";
-    
-    key <AE11> { [ NoSymbol,	NoSymbol,	aring,		Aring	] };
-};
-
-partial alphanumeric_keys
-xkb_symbols "colemak_ch" {
-    include "cyborg16(colemak)"
-    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
-    
-    key <AD01> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] };
-    key <AD02> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp] };
-    key <AD06> { [ udiaeresis,  Udiaeresis,     NoSymbol,       NoSymbol] };
-    key <AD10> { [ odiaeresis,  Odiaeresis,     NoSymbol,       NoSymbol] };
-    key <AD11> { [ j,           J,              eacute,         Eacute  ] };
-    key <AD12> { [ q,           Q,              egrave,         Egrave  ] };
-    
-    key <AC11> { [ apostrophe,  underscore,     agrave,         Agrave  ] };
-    
-    key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
-};
-
-partial alphanumeric_keys
-xkb_symbols "colemak_ukch" {
-    include "cyborg16(colemak_ch)"
-    name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
-    
-    key <AE02> { [ 2,		at	] };
-    key <AE03> { [ 3,		sterling] };
-    key <AE04> { [ 4,		dollar, 	EuroSign] };
-    
-  //key <AC11> { [ apostrophe,	quotedbl] };
-    key <TLDE> { [ grave,	notsign	] };
-    
-    key <BKSL> { [ numbersign,	asciitilde ] };
-    key <LSGT> { [ backslash,	bar,		bar,	brokenbar] };
-    
-    include "level3(ralt_switch_multikey)"
-};
-
-partial alphanumeric_keys
-xkb_symbols "dvorak_uk" {
-    include "us(dvorak)"
-    include "cyborg16(progsyms3)"
-    include "cyborg16(l4_greek)"
-    
-    name[Group1]="UK keyboard, Dvorak, progsyms and greek";
-    
-    key <AE02> { [ 2,		at	] };
-    key <AE03> { [ 3,		sterling] };
-    key <AE04> { [ 4,		dollar,		EuroSign] };
-    
-    key <AD01> { [ apostrophe,  quotedbl] };
-    
-    key <TLDE> { [ grave,	notsign	] };
-    
-    key <BKSL> { [ numbersign,	asciitilde	] };
-    key <LSGT> { [ backslash,	bar,		bar,	brokenbar	] };
-    
-    include "level3(ralt_switch_multikey)"
-};
-
-partial default alphanumeric_keys
-xkb_symbols "basic" {
-    include "latin"
-    include "cyborg16(progsyms3)"
-    include "cyborg16(l4_greek)"
-    name[Group1]="US keyboard, qwerty, progsyms and greek";
-    
-    include "level3(ralt_switch_multikey)"
-};
-
-partial default alphanumeric_keys
-xkb_symbols "basic_uk" {
-    include "latin"
-    include "cyborg16(progsyms3)"
-    include "cyborg16(l4_greek)"
-    name[Group1]="UK keyboard, qwerty, progsyms and greek";
-    
-    key <AE02> { [ 2,		at ] };
-    key <AE03> { [ 3,		sterling ] };
-    key <AE04> { [ 4,		dollar,		EuroSign ] };
-    
-    key <AC11> { [ apostrophe,	quotedbl ] };
-    key <TLDE> { [ grave,	notsign ] };
-    
-    key <BKSL> { [ numbersign,	asciitilde ] };
-    key <LSGT> { [ backslash,	bar,		bar,	brokenbar ] };
-    
-    include "level3(ralt_switch_multikey)"
-};
-
-
-// ————————————————————————————————————————————————————————————————————————————
 //  OLD STUFF
 // ————————————————————————————————————————————————————————————————————————————
 
@@ -313,7 +312,18 @@ xkb_symbols "progsyms" {
 };
 
 // These have the right hand shifted one key right, in an attempt to make the
-// thumb alt key easier to press. It turned out not to be a good idea though..
+// thumb alt key easier to press. It turned out not to be a good idea.
+
+partial alphanumeric_keys
+xkb_symbols "colemak_shift" {
+    include "cyborg16(gbcolemak_shift)"
+    include "cyborg16(progsyms_shift)"
+    name[Group1]="United Kingdom - Colemak and progsyms shifted";
+    
+    key <BKSL> { [ apostrophe,  quotedbl,       dead_circumflex,        dead_caron      ] };
+    
+    include "level3(ralt_switch_multikey)"
+};
 
 partial alphanumeric_keys
 xkb_symbols "progsyms_shift" {
@@ -421,14 +431,4 @@ xkb_symbols "gbcolemak_shift" {
     key <SPCE> { [ space,	space,		space,		nobreakspace	] };
     
     include "level3(ralt_switch)"
-};
-partial alphanumeric_keys
-xkb_symbols "colemak_shift" {
-    include "cyborg16(gbcolemak_shift)"
-    include "cyborg16(progsyms_shift)"
-    name[Group1]="United Kingdom - Colemak and progsyms shifted";
-    
-    key <BKSL> { [ apostrophe,	quotedbl,	dead_circumflex,	dead_caron	] };
-    
-    include "level3(ralt_switch_multikey)"
 };
