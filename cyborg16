@@ -158,7 +158,7 @@ xkb_symbols "dvorak_uk" {
 // Lots of useful operators and other non-letter glyphs
 // Layout is as in the third layer of the graphic above, except for a few
 // symbols in the fourth layer (overriden above).
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "progsyms3" {
     name[Group1]="3rd-level symbols for programmers";
     
@@ -214,7 +214,7 @@ xkb_symbols "progsyms3" {
 };
 
 // above with proper operators (division, multiplication and subtraction) for middle fingers, third level
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "prog_ops" {
     name[Group1]="3rd-level symbols for programmers (real operators)";
     include "cyborg16(prog_intl)"
@@ -233,7 +233,7 @@ xkb_symbols "prog_ops" {
 // α ρ σ τ δ η ν ε ι ο .
 //  ζ χ ψ ω β κ μ . . .
 
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "l4_greek" {
     name[Group1]="4th-level Greek";
     
@@ -276,7 +276,7 @@ xkb_symbols "l4_greek" {
 // [ ( - = _ : ~ + ) ]          // & + * = _   ~ / - |
 // ` ' ! $     # ? "            //   ` ! $     # ? \ 
 
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "progsyms" {
     name[Group1]="3rd-level symbols for programmers";
     
@@ -325,7 +325,7 @@ xkb_symbols "colemak_shift" {
     include "level3(ralt_switch_multikey)"
 };
 
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "progsyms_shift" {
     name[Group1]="3rd-level symbols for programmers shifted";
     
@@ -368,7 +368,7 @@ xkb_symbols "progsyms_shift" {
 
 // All the following were stolen from gb, with at and quotedbl swapped.
 
-partial alphanumeric_keys
+partial hidden alphanumeric_keys
 xkb_symbols "gbcolemak_shift" {
     include "us"
     include "cyborg16(progsyms_shift)"

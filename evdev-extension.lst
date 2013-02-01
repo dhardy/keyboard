@@ -1,0 +1,10 @@
+Under ! model:
+  cyborg16        Diggory's layouts
+
+Under ! variant:
+  colemak         cyborg16: US colemak
+  colemak_ds      cyborg16: US colemak with ä, ö, ü, å
+  colemak_ch      cyborg16: US colemak with ä, ö, ü
+  colemak_ukch    cyborg16: UK colemak with ä, ö, ü
+  dvorak_uk       cyborg16: UK Dvorak
+  basic_uk        cyborg16: UK qwerty
