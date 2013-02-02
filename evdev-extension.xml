@@ -16,24 +16,34 @@
           </configItem>
         </variant>
         <variant>
-          <name>colemak_ds</name>
-          <description>US colemak with ä, ö, ü, å</description>
+          <configItem>
+            <name>colemak_ds</name>
+            <description>US colemak with ä, ö, ü, å</description>
+          </configItem>
         </variant>
         <variant>
-          <name>colemak_ch</name>
-          <description>US colemak with ä, ö, ü</description>
+          <configItem>
+            <name>colemak_ch</name>
+            <description>US colemak with ä, ö, ü</description>
+          </configItem>
         </variant>
         <variant>
-          <name>colemak_ukch</name>
-          <description>UK colemak, with ä, ö, ü</description>
+          <configItem>
+            <name>colemak_ukch</name>
+            <description>UK colemak, with ä, ö, ü</description>
+          </configItem>
         </variant>
         <variant>
-          <name>dvorak_uk</name>
-          <description>UK Dvorak</description>
+          <configItem>
+            <name>dvorak_uk</name>
+            <description>UK Dvorak</description>
+          </configItem>
         </variant>
         <variant>
-          <name>basic_uk</name>
-          <description>UK qwerty</description>
+          <configItem>
+            <name>basic_uk</name>
+            <description>UK qwerty</description>
+          </configItem>
         </variant>
       </variantList>
     </layout>
