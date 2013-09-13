@@ -260,6 +260,20 @@ After this change, linux should use the new layout for all users on boot
 (but note that desktop environment settings may override the system layout once
 a user logs in).
 
+#### Dealing with modified layout files
+
+It appears that keymaps are compiled by xkbcomp and compiled versions are 
+stored in /var/lib/xkb . If there is already a compiled keymap, it appears that 
+it will be loaded. To use the latest version, you can either use setxkbmap via 
+xkbcomp:
+
+    setxkbmap ... -print | xkbcomp - $DISPLAY
+
+(this is not a good solution as it appears the compiled maps still get used 
+on hotloading) or you can delete the files in /var/lib/xkb to force the 
+compiled maps to be regenerated (still investigating whether this is a good 
+solution).
+
 
 Installing on other systems
 ----------------------------------
