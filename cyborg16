@@ -109,6 +109,28 @@ xkb_symbols "colemak_ch" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "workman_ch" {
+    include "us(workman)"
+    include "cyborg16(progsyms3)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US workman with ä, ö, ü, progsyms and greek";
+    
+    key <CAPS> { [ BackSpace,   BackSpace,      BackSpace, BackSpace    ] };
+    
+    
+    key <AD02> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp] };
+    key <AD10> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] };
+    key <AD11> { [ odiaeresis,  Odiaeresis,     eacute,         Eacute  ] };
+    key <AD12> { [ udiaeresis,  Udiaeresis,     egrave,         Egrave  ] };
+    
+    key <AC11> { [ apostrophe,  underscore,     agrave,         Agrave  ] };
+    
+    key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "colemak_ukch" {
     include "cyborg16(colemak_ch)"
     name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
