@@ -368,8 +368,8 @@ xkb_symbols "progsyms4" {
     
     key <AB06> { [ NoSymbol,    NoSymbol,       division,       NoSymbol        ] }; // ÷
     key <AB07> { [ NoSymbol,    NoSymbol,       percent,        NoSymbol        ] }; // %
-    key <AB08> { [ NoSymbol,    NoSymbol,       0,              NoSymbol        ] }; // 0
-    key <AB09> { [ NoSymbol,    NoSymbol,       period,         periodcentered  ] }; // . ·
+    key <AB08> { [ NoSymbol,    semicolon,      0,              NoSymbol        ] }; // 0
+    key <AB09> { [ NoSymbol,    colon,          period,         periodcentered  ] }; // . ·
     key <AB10> { [ NoSymbol,    NoSymbol,       slash,          division        ] }; // / ÷
 };
 
