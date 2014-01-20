@@ -18,13 +18,13 @@
 
 // For the fourth level, lower-case Greek letters can be added.
 
-// My personal keyboard looks like this (colemak_ch):
+// This is roughly colemak_ch on a ThinkPad keyboard (e.g. T410):
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
 // │ ~ ⊦ │ ! ↓ │ @ ↑ │ # ↦ │ $ ¢ │ %   │ ^   │ &   │ * · │ ( ∉ │ ) ∌ │ _ — │ + ± ┃ ⌫ Back-  ┃
 // │ ` ¬ │ 1 ← │ 2 → │ 3 £ │ 4 € │ 5 ¤ │ 6 ^û│ 7 ÷ │ 8 × │ 9 ∈ │ 0 ∋ │ - − │ = ≡ ┃   space  ┃
 // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
-// ┃        ┃ Q ≤ │ W ß │ F φ │ P π │ G γ │ J ξ │ L λ │ U θ │ Y υ │ Ä ≥ │ Ö É │ Ü ̨È ┃ |     ┃
+// ┃        ┃ Q ≤ │ W ß │ F φ │ P π │ G γ │ J ξ │ L λ │ U θ │ Y υ │ Ä ≥ │ Ö É │ Ü È ┃ |     ┃
 // ┃ Tab ↹  ┃ q < │ w { │ f / │ p | │ g % │ j ^ │ l & │ u * │ y } │ ä > │ ö é │ ü è ┃ \ #   ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┻━━━━━━━┫
 // ┃ Back-  ⌫ ┃ A α │ R ρ │ S σ │ T τ │ D δ │ H η │ N ν │ E ε │ I ι │ O ο │ _ À ┃           ┃
@@ -38,6 +38,44 @@
 // ┗━━━━━┻━━━━━━━┻━━━━┻━━━━━┹──────────────────────────────┺━━━━━┻━━━━━┻━━━━━┩←   │↓   │→   │
 //                                                                           └────┴────┴────┘
 
+// Alternative, designed for the ErgoDox (which as no separate F-keys, hence
+// putting numbers on the third layer). Note that this is achieved via two
+// layouts: the ErgoDox config which sets the position of the F-keys, bracket
+// keys (here ö, ü), ` key, arrow keys, etc., and the second which sets the
+// third layer stuff (plus a few others). The ErgoDox layout is designed also
+// work with standard software mappings ("num mod" gives access to 1-9, 0 which
+// are the only important missing keys) and the software mapping is designed to
+// work on standard keyboards (though a few keys will be in different places).
+
+// ┏━━━━━━━━┱─────┬─────┬─────┬─────┬─────┬─────┐      ┌─────┬─────┬─────┬─────┬─────┬─────┬────────┐
+// ┃        ┃   ↓ │   ↑ │   ¤ │   ¢ │   ∉ │   ∌ │      │     │     │     │     │     │     │  + ±   │
+// ┃  Esc   ┃ F1← │ F2→ │ F3£ │ F4€ │ F5∈ │F6 ∋ │      │ F7  │ F8  │ F9& │F10 7│F11 8│F12 9│  = ≠   │
+// ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────╆━━━━━┪      ┢━━━━━╅─────┼─────┼─────┼─────┼─────┼────────┤
+// ┃ ↹      ┃   ≤ │   ≥ │   φ │   π │   γ ┃ Ö É ┃      ┃ ~ ⊦ ┃   ξ │   λ │   θ │   υ │ Ä   │  _ −   │
+// ┃  Tab   ┃ q < │ w { │ f } │ p > │ g ^ ┃     ┃      ┃     ┃ j × │ l * │ u 4 │ y 5 │ ä 6 │  - —   │
+// ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────┨ ö é ┃      ┃ ` ¬ ┠─────┼─────┼─────┼─────┼─────┼────────┤
+// ┃⌫ Back- ┃   α │   ρ │   σ │   τ │   δ ┣━━━━━┫      ┣━━━━━┫   η │   ν │   ε │   ι │   ο │  @ À   │
+// ┃  space ┃ a [ │ r ( │ s ) │ t ] │ d | ┃     ┃      ┃     ┃ h - │ n + │ e 1 │ i 2 │ o 3 │  ' à   │
+// ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────┨ Ü È ┃      ┃ | ß ┠─────┼─────┼─────┼─────┼─────╆━━━━━━━━┪
+// ┃ ⇧      ┃   ζ │   χ │   ψ │   ω │   β ┃     ┃      ┃     ┃   κ │   μ │ ;   │ : · │ ? ÷ ┃ ⇧      ┃
+// ┃  Shift ┃ z ` │ x " │ c ç │ v $ │ b ! ┃ ü è ┃      ┃ \ # ┃ k ÷ │ m % │ , 0 │ . . │ / / ┃  Shift ┃
+// ┗━━┳━━━━━╈━━━━━╈━━━━━╈━━━━━╈━━━━━╅─────┺━━━━━┛      ┗━━━━━┹─────╆━━━━━╈━━━━━╈━━━━━╈━━━━━╋━━━━━┳━━┛
+//    ┃     ┃     ┃ ⇤   ┃ ⇥   ┃     ┃ ┏━━━━━┳━━━━━┓  ┏━━━━━┳━━━━━┓ ┃ ⇮   ┃ ←   ┃ →   ┃     ┃     ┃
+//    ┃Ctrl ┃Meta ┃Home ┃ End ┃ Alt ┃ ┃     ┃ Num ┃  ┃     ┃For- ┃ ┃AltGr┃Left ┃Right┃Menu ┃Ctrl ┃
+//    ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛ ┃ Ins ┃ mod ┃  ┃Back ┃wards┃ ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+//                              ┏━━━━━╋━━━━━╋━━━━━┫  ┣━━━━━╋━━━━━╋━━━━━┓
+//                              ┃ ␣ ⍽ ┃     ┃ ↑   ┃  ┃Page ┃     ┃     ┃
+//                              ┃ ␣ ␣ ┃ ⌦   ┃ Up  ┃  ┃ Up  ┃ ⌫   ┃ ⏎   ┃
+//                              ┃     ┃     ┣━━━━━┫  ┣━━━━━┫Back-┃     ┃
+//                              ┃Space┃ Del ┃ ↓   ┃  ┃Page ┃space┃Enter┃
+//                              ┃     ┃     ┃Down ┃  ┃Down ┃     ┃     ┃
+//                              ┗━━━━━┻━━━━━┻━━━━━┛  ┗━━━━━┻━━━━━┻━━━━━┛
+// Media bindings (with AltGr):
+// Ins: play/pause
+// Back/forward: prev/next
+// Page up/down: volume up/down
+// F8: lock (XF86ScreenSaver)
+// F7: standby (XF86Sleep)
 
 // ————————————————————————————————————————————————————————————————————————————
 //  FINAL VARIANTS — (layout variants you can pick)
@@ -86,6 +124,18 @@ xkb_symbols "colemak" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "colemak4" {
+    include "us(colemak)"
+    include "cyborg16(progsyms4)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, colemak, progsyms and greek";
+    
+    key <CAPS> { [ BackSpace,   BackSpace,      BackSpace,      BackSpace       ] };
+    
+    include "level3(ralt_switch_multikey)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "colemak_ds" {
     include "cyborg16(colemak_ch)"
     name[Group1]="US colemak with ä, ö, ü, å, progsyms and greek";
@@ -105,6 +155,19 @@ xkb_symbols "colemak_ch" {
     
     key <AC11> { [ apostrophe,  underscore,     agrave,         Agrave  ] };
     
+    key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemak4_ch" {
+    include "cyborg16(colemak4)"
+    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
+    
+    key <BKSL> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp  ] }; // ß
+    key <AD10> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] }; // ä Ä
+    key <AD11> { [ odiaeresis,  Odiaeresis,     eacute,         Eacute  ] }; // ö Ö é É
+    key <AD12> { [ udiaeresis,  Udiaeresis,     egrave,         Egrave  ] }; // ü Ü è È
+    key <AC11> { [ apostrophe,  at,             agrave,         Agrave  ] }; // ' @ à À
     key <AB03> { [ NoSymbol,    NoSymbol,       ccedilla,       NoSymbol] }; // Ccedilla overrides psi
 };
 
@@ -180,7 +243,7 @@ xkb_symbols "dvorak_uk" {
 // symbols in the fourth layer (overriden above).
 partial hidden alphanumeric_keys
 xkb_symbols "progsyms3" {
-    name[Group1]="3rd-level symbols for programmers";
+    name[Group1]="3rd-level symbols for programmers v3";
     
     key <TLDE> { [ NoSymbol,	NoSymbol,	notsign,	0x10022A6	] }; // ¬ ⊦
     key <AE01> { [ NoSymbol,	NoSymbol,	leftarrow,	downarrow	] }; // ← ↓
@@ -231,6 +294,83 @@ xkb_symbols "progsyms3" {
     key <AB08> { [ NoSymbol,	0x1002212,	semicolon,	guillemotleft	] }; // − ; «
     key <AB09> { [ NoSymbol,	0x1002014,	colon,		guillemotright	] }; // — : »
     key <AB10> { [ NoSymbol,	NoSymbol,	numbersign,	questiondown	] }; // # ¿
+};
+
+// Lots of useful operators and other non-letter glyphs as well as numbers
+// Layout mostly as shown in "ErgoDox" diagram; number keys are bound to the
+// same as the F-key: 1-5 to F1-F5, 6-0 to F8-F12
+partial hidden alphanumeric_keys
+xkb_symbols "progsyms4" {
+    name[Group1]="3rd-level symbols for programmers v4";
+    
+    key <FK01> { [ NoSymbol,    NoSymbol,       leftarrow,      downarrow       ] }; // ← ↓
+    key <FK02> { [ NoSymbol,    NoSymbol,       rightarrow,     uparrow         ] }; // → ↑
+    key <FK03> { [ NoSymbol,    NoSymbol,       sterling,       currency        ] }; // £ ¤
+    key <FK04> { [ NoSymbol,    NoSymbol,       EuroSign,       cent            ] }; // € ¢
+    key <FK05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
+    key <FK06> { [ NoSymbol,    NoSymbol,       0x100220B,      0x100220C       ] }; // ∋ ∌
+    
+    key <FK07> { [ NoSymbol,    NoSymbol,       XF86Sleep,      NoSymbol        ] }; // standby
+    key <FK08> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,NoSymbol        ] }; // lock screen
+    key <FK09> { [ NoSymbol,    NoSymbol,       ampersand,      NoSymbol        ] }; // &
+    key <FK10> { [ NoSymbol,    NoSymbol,       7,              NoSymbol        ] }; // 7
+    key <FK11> { [ NoSymbol,    NoSymbol,       8,              NoSymbol        ] }; // 8
+    key <FK12> { [ NoSymbol,    NoSymbol,       9,              NoSymbol        ] }; // 9
+    
+    key <AE01> { [ NoSymbol,    NoSymbol,       leftarrow,      downarrow       ] }; // ← ↓
+    key <AE02> { [ NoSymbol,    NoSymbol,       rightarrow,     uparrow         ] }; // → ↑
+    key <AE03> { [ NoSymbol,    NoSymbol,       sterling,       currency        ] }; // £ ¤
+    key <AE04> { [ NoSymbol,    NoSymbol,       EuroSign,       cent            ] }; // € ¢
+    key <AE05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
+    
+    key <AE06> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,NoSymbol        ] }; // lock screen
+    key <AE07> { [ NoSymbol,    NoSymbol,       ampersand,      NoSymbol        ] }; // &
+    key <AE08> { [ NoSymbol,    NoSymbol,       7,              NoSymbol        ] }; // 7
+    key <AE09> { [ NoSymbol,    NoSymbol,       8,              NoSymbol        ] }; // 8
+    key <AE10> { [ NoSymbol,    NoSymbol,       9,              NoSymbol        ] }; // 9
+    
+    key <TLDE> { [ NoSymbol,    NoSymbol,       notsign,        0x10022A6       ] }; // ¬ ⊦
+    key <AE11> { [ NoSymbol,    NoSymbol,       0x1002212,      0x1002014       ] }; // − — (minus, m-dash)
+    key <AE12> { [ NoSymbol,    NoSymbol,       0x1002260,      plusminus       ] }; // ≠ ±
+    key <BKSL> { [ backslash,   bar,            numbersign,     brokenbar       ] }; // \ | # ¦
+    
+    key <AD01> { [ NoSymbol,    NoSymbol,       less,           0x1002264       ] }; // < ≤
+    key <AD02> { [ NoSymbol,    NoSymbol,       braceleft,      0x1002265       ] }; // { ≥
+    key <AD03> { [ NoSymbol,    NoSymbol,       braceright,     NoSymbol        ] }; // }
+    key <AD04> { [ NoSymbol,    NoSymbol,       greater,        NoSymbol        ] }; // >
+    key <AD05> { [ NoSymbol,    NoSymbol,       asciicircum,    dead_circumflex ] }; // ^ û
+    
+    key <AD06> { [ NoSymbol,    NoSymbol,       multiply,       NoSymbol        ] }; // ×
+    key <AD07> { [ NoSymbol,    NoSymbol,       asterisk,       NoSymbol        ] }; // *
+    key <AD08> { [ NoSymbol,    NoSymbol,       4,              NoSymbol        ] }; // 4
+    key <AD09> { [ NoSymbol,    NoSymbol,       5,              NoSymbol        ] }; // 5
+    key <AD10> { [ NoSymbol,    NoSymbol,       6,              NoSymbol        ] }; // 6
+    key <AD11> { [ NoSymbol,    NoSymbol,       NoSymbol,       NoSymbol        ] };
+    key <AD12> { [ NoSymbol,    NoSymbol,       NoSymbol,       NoSymbol        ] };
+    
+    key <AC01> { [ NoSymbol,    NoSymbol,       bracketleft,    NoSymbol        ] }; // [
+    key <AC02> { [ NoSymbol,    NoSymbol,       parenleft,      NoSymbol        ] }; // (
+    key <AC03> { [ NoSymbol,    NoSymbol,       parenright,     NoSymbol        ] }; // )
+    key <AC04> { [ NoSymbol,    NoSymbol,       bracketright,   NoSymbol        ] }; // ]
+    key <AC05> { [ NoSymbol,    NoSymbol,       bar,            NoSymbol        ] }; // |
+    
+    key <AC06> { [ NoSymbol,    NoSymbol,       minus,          NoSymbol        ] }; // -
+    key <AC07> { [ NoSymbol,    NoSymbol,       plus,           NoSymbol        ] }; // +
+    key <AC08> { [ NoSymbol,    NoSymbol,       1,              NoSymbol        ] }; // 1
+    key <AC09> { [ NoSymbol,    NoSymbol,       2,              NoSymbol        ] }; // 2
+    key <AC10> { [ NoSymbol,    NoSymbol,       3,              NoSymbol        ] }; // 3
+    
+    key <AB01> { [ NoSymbol,    NoSymbol,       grave,          NoSymbol        ] }; // `
+    key <AB02> { [ NoSymbol,    NoSymbol,       quotedbl,       NoSymbol        ] }; // "
+    key <AB03> { [ NoSymbol,    NoSymbol,       NoSymbol,       NoSymbol        ] }; //  
+    key <AB04> { [ NoSymbol,    NoSymbol,       dollar,         NoSymbol        ] }; // $
+    key <AB05> { [ NoSymbol,    NoSymbol,       exclam,         NoSymbol        ] }; // !
+    
+    key <AB06> { [ NoSymbol,    NoSymbol,       division,       NoSymbol        ] }; // ÷
+    key <AB07> { [ NoSymbol,    NoSymbol,       percent,        NoSymbol        ] }; // %
+    key <AB08> { [ NoSymbol,    NoSymbol,       0,              NoSymbol        ] }; // 0
+    key <AB09> { [ NoSymbol,    NoSymbol,       period,         periodcentered  ] }; // . ·
+    key <AB10> { [ NoSymbol,    NoSymbol,       slash,          division        ] }; // / ÷
 };
 
 // above with proper operators (division, multiplication and subtraction) for middle fingers, third level
