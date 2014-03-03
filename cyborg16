@@ -48,17 +48,17 @@
 // work on standard keyboards (though a few keys will be in different places).
 
 // ┏━━━━━━━━┱─────┬─────┬─────┬─────┬─────┬─────┐      ┌─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━┓
-// ┃        ┃   ↓ │   ↑ │   ¤ │   ¢ │   ∉ │   ∌ │      │     │     │     │     │     │     ┃  ⌦     ┃
+// ┃        ┃   ↓ │   ↑ │   ¤ │   ¢ │   ∉ │   ∌ │      │     │     │    ~│    ~│    ~│    ·┃  ⌦     ┃
 // ┃  Esc   ┃ F1← │ F2→ │ F3£ │ F4€ │ F5∈ │F6 ∋ │      │ F7  │ F8  │F9 7 │F10 8│F11 9│F12 ×┃ Delete ┃
 // ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────╆━━━━━┪      ┢━━━━━╅─────┼─────┼─────┼─────┼─────╊━━━━━━━━┫
-// ┃ ↹      ┃   ≤ │   ≥ │   φ │   π │   γ ┃ Ö É ┃      ┃ ~   ┃   ξ │   λ │   θ │   υ │ Ä   ┃  ⌫     ┃
-// ┃  Tab   ┃ q < │ w { │ f } │ p > │ g ^ ┃     ┃      ┃     ┃ j & │ l 4 │ u 5 │ y 6 │ ä + ┃Backspce┃
-// ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────┨ ö é ┃      ┃ ` @ ┠─────┼─────┼─────┼─────┼─────╄━━━━━━━━┩
+// ┃ ↹      ┃   ≤ │   ≥ │   φ │   π │   γ ┃ Ö É ┃      ┃ Ä   ┃   ξ │   λ │   θ │   υ │ — − ┃  ⌫     ┃
+// ┃  Tab   ┃ q < │ w { │ f } │ p > │ g ^ ┃     ┃      ┃     ┃ j & │ l 4 │ u 5 │ y 6 │ - + ┃Backspce┃
+// ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────┨ ö é ┃      ┃ ä @ ┠─────┼─────┼─────┼─────┼─────╄━━━━━━━━┩
 // ┃⌫ Back- ┃   α │   ρ │   σ │   τ │   δ ┣━━━━━┫      ┣━━━━━┫   η │   ν │   ε │   ι │   ο │  _ À   │
 // ┃  space ┃ a [ │ r ( │ s ) │ t ] │ d | ┃     ┃      ┃     ┃ h = │ n 1 │ e 2 │ i 3 │ o % │  ' à   │
 // ┣━━━━━━━━╉─────┼─────┼─────┼─────┼─────┨ Ü È ┃      ┃ | ß ┠─────┼─────┼─────┼─────┼─────╆━━━━━━━━┪
 // ┃ ⇧      ┃   ζ │   χ │   ψ │   ω │   β ┃     ┃      ┃     ┃   κ │   μ │ ;   │ : · │ ? ÷ ┃ ⇧      ┃
-// ┃  Shift ┃ z ` │ x " │ c ç │ v $ │ b ! ┃ ü è ┃      ┃ \ # ┃ k - │ m * │ , 0 │ . . │ / / ┃  Shift ┃
+// ┃  Shift ┃ z ` │ x " │ c ç │ v $ │ b ! ┃ ü è ┃      ┃ \ # ┃ k * │ m 0 │ , , │ . . │ / / ┃  Shift ┃
 // ┗━━┳━━━━━╋━━━━━╈━━━━━╈━━━━━╈━━━━━╅─────┺━━━━━┛      ┗━━━━━┹─────╆━━━━━╈━━━━━╈━━━━━╈━━━━━╋━━━━━┳━━┛
 //    ┃     ┃     ┃ ⇤   ┃ ⇥   ┃     ┃ ┏━━━━━┳━━━━━┓  ┏━━━━━┳━━━━━┓ ┃ ⇮   ┃ ←   ┃ →   ┃     ┃     ┃
 //    ┃Ctrl ┃Meta ┃Home ┃ End ┃ Alt ┃ ┃     ┃ Num ┃  ┃ _ — ┃ + ± ┃ ┃AltGr┃Left ┃Right┃Menu ┃Ctrl ┃
@@ -146,7 +146,7 @@ xkb_symbols "colemak_ds" {
 partial alphanumeric_keys
 xkb_symbols "ch_keys" {
     key <BKSL> { [ NoSymbol,    NoSymbol,       NoSymbol,       ssharp  ] }; //       ß
-    key <AD10> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] }; // ä Ä
+    key <TLDE> { [ adiaeresis,  Adiaeresis,     NoSymbol,       NoSymbol] }; // ä Ä
     key <AD11> { [ odiaeresis,  Odiaeresis,     eacute,         Eacute  ] }; // ö Ö é É
     key <AD12> { [ udiaeresis,  Udiaeresis,     egrave,         Egrave  ] }; // ü Ü è È
     key <AC11> { [ NoSymbol,    NoSymbol,       agrave,         Agrave  ] }; //     à À
@@ -302,10 +302,10 @@ xkb_symbols "progsyms4" {
     
     key <FK07> { [ NoSymbol,    NoSymbol,       XF86Sleep,      NoSymbol        ] }; // standby
     key <FK08> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,NoSymbol        ] }; // lock screen
-    key <FK09> { [ NoSymbol,    NoSymbol,       7,              NoSymbol        ] }; // 7
-    key <FK10> { [ NoSymbol,    NoSymbol,       8,              NoSymbol        ] }; // 8
-    key <FK11> { [ NoSymbol,    NoSymbol,       9,              NoSymbol        ] }; // 9
-    key <FK12> { [ NoSymbol,    NoSymbol,       multiply,       NoSymbol        ] }; // 
+    key <FK09> { [ NoSymbol,    NoSymbol,       7,              asciitilde      ] }; // 7 ~
+    key <FK10> { [ NoSymbol,    NoSymbol,       8,              asciitilde      ] }; // 8 ~
+    key <FK11> { [ NoSymbol,    NoSymbol,       9,              asciitilde      ] }; // 9 ~
+    key <FK12> { [ NoSymbol,    NoSymbol,       multiply,       periodcentered  ] }; // × ·
     
     key <AE01> { [ NoSymbol,    NoSymbol,       leftarrow,      downarrow       ] }; // ← ↓
     key <AE02> { [ NoSymbol,    NoSymbol,       rightarrow,     uparrow         ] }; // → ↑
@@ -330,11 +330,11 @@ xkb_symbols "progsyms4" {
     key <AD04> { [ NoSymbol,    NoSymbol,       greater,        NoSymbol        ] }; // >
     key <AD05> { [ NoSymbol,    NoSymbol,       asciicircum,    dead_circumflex ] }; // ^ û
     
-    key <AD06> { [ NoSymbol,    NoSymbol,       ampersand,      NoSymbol        ] }; // ×
-    key <AD07> { [ NoSymbol,    NoSymbol,       4,              NoSymbol        ] }; // *
-    key <AD08> { [ NoSymbol,    NoSymbol,       5,              NoSymbol        ] }; // 4
-    key <AD09> { [ NoSymbol,    NoSymbol,       6,              NoSymbol        ] }; // 5
-    key <AD10> { [ NoSymbol,    NoSymbol,       plus,           NoSymbol        ] }; // 6
+    key <AD06> { [ NoSymbol,    NoSymbol,       ampersand,      NoSymbol        ] }; // &
+    key <AD07> { [ NoSymbol,    NoSymbol,       4,              NoSymbol        ] }; // 4
+    key <AD08> { [ NoSymbol,    NoSymbol,       5,              NoSymbol        ] }; // 5
+    key <AD09> { [ NoSymbol,    NoSymbol,       6,              NoSymbol        ] }; // 6
+    key <AD10> { [ minus,       0x1002014,      plus,           0x1002212       ] }; // - — + − (dash, m-dash, plus, minus)
     key <AD11> { [ NoSymbol,    NoSymbol,       NoSymbol,       NoSymbol        ] };
     key <AD12> { [ NoSymbol,    NoSymbol,       NoSymbol,       NoSymbol        ] };
     
@@ -357,9 +357,9 @@ xkb_symbols "progsyms4" {
     key <AB04> { [ NoSymbol,    NoSymbol,       dollar,         NoSymbol        ] }; // $
     key <AB05> { [ NoSymbol,    NoSymbol,       exclam,         NoSymbol        ] }; // !
     
-    key <AB06> { [ NoSymbol,    NoSymbol,       minus,          NoSymbol        ] }; // ÷
-    key <AB07> { [ NoSymbol,    NoSymbol,       asterisk,       NoSymbol        ] }; // %
-    key <AB08> { [ NoSymbol,    semicolon,      0,              NoSymbol        ] }; // 0
+    key <AB06> { [ NoSymbol,    NoSymbol,       asterisk,       NoSymbol        ] }; // *
+    key <AB07> { [ NoSymbol,    NoSymbol,       0,              NoSymbol        ] }; // 0
+    key <AB08> { [ NoSymbol,    semicolon,      comma,          NoSymbol        ] }; // ,
     key <AB09> { [ NoSymbol,    colon,          period,         periodcentered  ] }; // . ·
     key <AB10> { [ NoSymbol,    NoSymbol,       slash,          division        ] }; // / ÷
     
