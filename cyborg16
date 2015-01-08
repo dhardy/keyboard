@@ -311,7 +311,7 @@ xkb_symbols "progsyms4" {
     key <AE04> { [ NoSymbol,    NoSymbol,       EuroSign,       cent            ] }; // € ¢
     key <AE05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
     
-    key <AE06> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,NoSymbol        ] }; // lock screen
+    key <AE06> { [ NoSymbol,    NoSymbol,       NoSymbol, NoSymbol        ] };
     key <AE07> { [ NoSymbol,    NoSymbol,       7,              NoSymbol        ] }; // &
     key <AE08> { [ NoSymbol,    NoSymbol,       8,              NoSymbol        ] }; // 7
     key <AE09> { [ NoSymbol,    NoSymbol,       9,              NoSymbol        ] }; // 8
