@@ -298,11 +298,11 @@ xkb_symbols "progsyms4" {
     key <FK05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
     key <FK06> { [ NoSymbol,    NoSymbol,       0x100220B,      0x100220C       ] }; // ∋ ∌
     
-    key <FK07> { [ NoSymbol,    NoSymbol,       XF86Sleep,      NoSymbol        ] }; // standby
-    key <FK08> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,NoSymbol        ] }; // lock screen
-    key <FK09> { [ NoSymbol,    NoSymbol,       7,              asciitilde      ] }; // 7 ~
-    key <FK10> { [ NoSymbol,    NoSymbol,       8,              asciitilde      ] }; // 8 ~
-    key <FK11> { [ NoSymbol,    NoSymbol,       9,              asciitilde      ] }; // 9 ~
+    key <FK07> { [ NoSymbol,    NoSymbol,       XF86Sleep,      XF86Sleep       ] }; // standby
+    key <FK08> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,XF86ScreenSaver ] }; // lock screen
+    key <FK09> { [ NoSymbol,    NoSymbol,       7,              7               ] }; // 7 ~
+    key <FK10> { [ NoSymbol,    NoSymbol,       8,              8               ] }; // 8 ~
+    key <FK11> { [ NoSymbol,    NoSymbol,       9,              9               ] }; // 9 ~
     key <FK12> { [ NoSymbol,    NoSymbol,       multiply,       periodcentered  ] }; // × ·
     
     key <AE01> { [ NoSymbol,    NoSymbol,       leftarrow,      downarrow       ] }; // ← ↓
