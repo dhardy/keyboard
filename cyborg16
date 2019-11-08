@@ -298,8 +298,8 @@ xkb_symbols "progsyms4" {
     key <FK05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
     key <FK06> { [ NoSymbol,    NoSymbol,       0x100220B,      0x100220C       ] }; // ∋ ∌
     
-    key <FK07> { [ NoSymbol,    NoSymbol,       XF86Sleep,      XF86Sleep       ] }; // standby
-    key <FK08> { [ NoSymbol,    NoSymbol,       XF86ScreenSaver,XF86ScreenSaver ] }; // lock screen
+    key <FK07> { [ NoSymbol,    NoSymbol,       0x1002260,       plusminus       ] }; // ≠ ±
+    key <FK08> { [ NoSymbol,    NoSymbol,       0x10000F7,      divide          ] }; // ÷ ÷
     key <FK09> { [ NoSymbol,    NoSymbol,       7,              7               ] }; // 7 ~
     key <FK10> { [ NoSymbol,    NoSymbol,       8,              8               ] }; // 8 ~
     key <FK11> { [ NoSymbol,    NoSymbol,       9,              9               ] }; // 9 ~
@@ -311,7 +311,7 @@ xkb_symbols "progsyms4" {
     key <AE04> { [ NoSymbol,    NoSymbol,       EuroSign,       cent            ] }; // € ¢
     key <AE05> { [ NoSymbol,    NoSymbol,       0x1002208,      0x1002209       ] }; // ∈ ∉
     
-    key <AE06> { [ NoSymbol,    NoSymbol,       NoSymbol, NoSymbol        ] };
+    key <AE06> { [ NoSymbol,    NoSymbol,       0x10000F7,      divide          ] }; // ÷ ÷
     key <AE07> { [ NoSymbol,    NoSymbol,       7,              NoSymbol        ] }; // &
     key <AE08> { [ NoSymbol,    NoSymbol,       8,              NoSymbol        ] }; // 7
     key <AE09> { [ NoSymbol,    NoSymbol,       9,              NoSymbol        ] }; // 8
