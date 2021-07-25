@@ -2,7 +2,7 @@
       <configItem>
         <name>cyborg16</name>
         <shortDescription>cyborg16</shortDescription>
-        <description>Diggory's layouts</description>
+        <description>Cyborg16 layouts</description>
         <languageList>
           <iso639Id>eng</iso639Id>
           <iso639Id>ger</iso639Id>
@@ -11,38 +11,74 @@
       <variantList>
         <variant>
           <configItem>
-            <name>colemak</name>
-            <description>US colemak</description>
+            <name>basic</name>
+            <description>US keyboard, qwerty, progsyms v3 and greek</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>colemak_ds</name>
-            <description>US colemak with ä, ö, ü, å</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_ch</name>
-            <description>US colemak with ä, ö, ü</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_ukch</name>
-            <description>UK colemak, with ä, ö, ü</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak_uk</name>
-            <description>UK Dvorak</description>
+            <name>basic4</name>
+            <description>US keyboard, qwerty, progsyms v4 and greek</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>basic_uk</name>
-            <description>UK qwerty</description>
+            <description>UK keyboard, qwerty, progsyms v3 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>US keyboard, colemak, progsyms v3 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak4</name>
+            <description>US keyboard, colemak, progsyms v4 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_ds</name>
+            <description>US colemak with ä, ö, ü, å, progsyms v3 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_ch</name>
+            <description>US colemak with ä, ö, ü, progsyms v3 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak4_ch</name>
+            <description>US colemak with ä, ö, ü, progsyms v4 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>workman4_ch</name>
+            <description>US workman with ä, ö, ü, progsyms v4 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_ukch</name>
+            <description>UK keyboard, colemak, near-Swiss accented keys, and progsyms v3</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak_uk</name>
+            <description>UK keyboard, Dvorak, progsyms v3 and greek</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_shift</name>
+            <description>UK colemak with right-hand shift</description>
           </configItem>
         </variant>
       </variantList>
