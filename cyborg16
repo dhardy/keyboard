@@ -81,13 +81,23 @@
 //  FINAL VARIANTS — (layout variants you can pick)
 // ————————————————————————————————————————————————————————————————————————————
 
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "basic" {
     include "latin"
     include "cyborg16(progsyms3)"
     include "cyborg16(l4_greek)"
-    name[Group1]="US keyboard, qwerty, progsyms and greek";
+    name[Group1]="US keyboard, qwerty, progsyms v3 and greek";
     
+    include "level3(ralt_switch_multikey)"
+};
+
+partial default alphanumeric_keys
+xkb_symbols "basic4" {
+    include "latin"
+    include "cyborg16(progsyms4)"
+    include "cyborg16(l4_greek)"
+    name[Group1]="US keyboard, qwerty, progsyms v4 and greek";
+
     include "level3(ralt_switch_multikey)"
 };
 
@@ -96,7 +106,7 @@ xkb_symbols "basic_uk" {
     include "latin"
     include "cyborg16(progsyms3)"
     include "cyborg16(l4_greek)"
-    name[Group1]="UK keyboard, qwerty, progsyms and greek";
+    name[Group1]="UK keyboard, qwerty, progsyms v3 and greek";
     
     key <AE02> { [ 2,           at ] };
     key <AE03> { [ 3,           sterling ] };
@@ -116,7 +126,7 @@ xkb_symbols "colemak" {
     include "us(colemak)"
     include "cyborg16(progsyms3)"
     include "cyborg16(l4_greek)"
-    name[Group1]="US keyboard, colemak, progsyms and greek";
+    name[Group1]="US keyboard, colemak, progsyms v3 and greek";
     
     key <CAPS> { [ BackSpace,   BackSpace,      BackSpace,      BackSpace       ] };
     
@@ -128,7 +138,7 @@ xkb_symbols "colemak4" {
     include "us(colemak)"
     include "cyborg16(progsyms4)"
     include "cyborg16(l4_greek)"
-    name[Group1]="US keyboard, colemak, progsyms and greek";
+    name[Group1]="US keyboard, colemak, progsyms v4 and greek";
     
     key <CAPS> { [ BackSpace,   BackSpace,      BackSpace,      BackSpace       ] };
     
@@ -138,7 +148,7 @@ xkb_symbols "colemak4" {
 partial alphanumeric_keys
 xkb_symbols "colemak_ds" {
     include "cyborg16(colemak_ch)"
-    name[Group1]="US colemak with ä, ö, ü, å, progsyms and greek";
+    name[Group1]="US colemak with ä, ö, ü, å, progsyms v3 and greek";
     
     key <AE11> { [ NoSymbol,    NoSymbol,       aring,          Aring   ] };
 };
@@ -157,14 +167,14 @@ partial alphanumeric_keys
 xkb_symbols "colemak_ch" {
     include "cyborg16(colemak)"
     include "cyborg16(ch_keys)"
-    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
+    name[Group1]="US colemak with ä, ö, ü, progsyms v3 and greek";
 };
 
 partial alphanumeric_keys
 xkb_symbols "colemak4_ch" {
     include "cyborg16(colemak4)"
     include "cyborg16(ch_keys)"
-    name[Group1]="US colemak with ä, ö, ü, progsyms and greek";
+    name[Group1]="US colemak with ä, ö, ü, progsyms v4 and greek";
 };
 
 partial alphanumeric_keys
@@ -173,7 +183,7 @@ xkb_symbols "workman4_ch" {
     include "cyborg16(progsyms4)"
     include "cyborg16(l4_greek)"
     include "cyborg16(ch_keys)"
-    name[Group1]="US workman with ä, ö, ü, progsyms and greek";
+    name[Group1]="US workman with ä, ö, ü, progsyms v4 and greek";
     
     key <CAPS> { [ BackSpace,   BackSpace,      BackSpace, BackSpace    ] };
     
@@ -183,7 +193,7 @@ xkb_symbols "workman4_ch" {
 partial alphanumeric_keys
 xkb_symbols "colemak_ukch" {
     include "cyborg16(colemak_ch)"
-    name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms";
+    name[Group1]="UK keyboard, colemak, near-Swiss accented keys, and progsyms v3";
     
     key <AE02> { [ 2,           at      ] };
     key <AE03> { [ 3,           sterling] };
@@ -204,7 +214,7 @@ xkb_symbols "dvorak_uk" {
     include "cyborg16(progsyms3)"
     include "cyborg16(l4_greek)"
     
-    name[Group1]="UK keyboard, Dvorak, progsyms and greek";
+    name[Group1]="UK keyboard, Dvorak, progsyms v3 and greek";
     
     key <AE02> { [ 2,           at      ] };
     key <AE03> { [ 3,           sterling] };
@@ -469,7 +479,7 @@ partial alphanumeric_keys
 xkb_symbols "colemak_shift" {
     include "cyborg16(gbcolemak_shift)"
     include "cyborg16(progsyms_shift)"
-    name[Group1]="United Kingdom - Colemak and progsyms shifted";
+    name[Group1]="UK colemak with right-hand shift";
     
     key <BKSL> { [ apostrophe,  quotedbl,       dead_circumflex,        dead_caron      ] };
     
