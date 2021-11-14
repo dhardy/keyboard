@@ -2,7 +2,7 @@
       <configItem>
         <name>cyborg16</name>
         <shortDescription>cyborg16</shortDescription>
-        <description>Diggory's layouts</description>
+        <description>Cyborg16 layouts</description>
         <languageList>
           <iso639Id>eng</iso639Id>
           <iso639Id>ger</iso639Id>
@@ -11,38 +11,62 @@
       <variantList>
         <variant>
           <configItem>
-            <name>colemak</name>
-            <description>US colemak</description>
+            <name>colemak3</name>
+            <description>US colemak, syms3</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak4</name>
+            <description>US colemak, syms4</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>colemak_ds</name>
-            <description>US colemak with ä, ö, ü, å</description>
+            <description>US colemak with ä, ö, ü, å, syms3</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>colemak_ch</name>
-            <description>US colemak with ä, ö, ü</description>
+            <description>US colemak with ä, ö, ü, syms3</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak4_ch</name>
+            <description>US colemak with ä, ö, ü, syms4</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>colemak_ukch</name>
-            <description>UK colemak, with ä, ö, ü</description>
+            <description>UK colemak, with ä, ö, ü, syms3</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>workman4_ch</name>
+            <description>UK workman, with ä, ö, ü, syms4</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvorak_uk</name>
-            <description>UK Dvorak</description>
+            <description>UK Dvorak, syms3</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>basic_uk</name>
-            <description>UK qwerty</description>
+            <description>UK qwerty, syms3</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_shift</name>
+            <description>UK Colemak right-shifted, syms3</description>
           </configItem>
         </variant>
       </variantList>
