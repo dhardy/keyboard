@@ -328,7 +328,7 @@ xkb_symbols "progsyms4" {
     key <AE10> { [ NoSymbol,    NoSymbol,       multiply,       NoSymbol        ] }; // 9
     
     key <TLDE> { [ NoSymbol,    NoSymbol,       at,             NoSymbol        ] }; // @
-    key <AE11> { [ NoSymbol,    NoSymbol,       0x1002212,      0x1002014       ] }; // − — (minus, m-dash)
+    key <AE11> { [ minus,       0x1002014,      plus,           0x1002212       ] }; // - — + − (dash, m-dash, plus, minus)
     key <AE12> { [ NoSymbol,    NoSymbol,       0x1002260,      plusminus       ] }; // ≠ ±
     key <BKSL> { [ backslash,   bar,            numbersign,     brokenbar       ] }; // \ | # ¦
     
